@@ -1,0 +1,8 @@
+#order_info .title{
+    margin-top: 30px;
+    z-index: 2;
+}
+#order_info .title a{
+    color: #FF6699;
+    text-decoration: underline;
+}

@@ -1,0 +1,29 @@
+body{
+    background-color: #fff;
+}
+.prompt, .info{
+    padding: 20px;
+}
+.prompt .title{
+   height: 30px;
+    line-height: 30px;
+    margin-top: 40px;
+}
+.prompt .title .success{
+    color: #FF6E9E;
+    font-size: 19px;
+    display: inline-block;
+    word-break:break-all;
+    width: 132px;
+}
+.info .list{
+    background-color: #F7F7F7;
+    border-radius: 20px;
+   padding: 15px;
+    overflow: hidden;
+}
+.fo{
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+}

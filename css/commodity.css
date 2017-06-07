@@ -1,0 +1,112 @@
+.shop_list{
+    padding: 15px;
+
+}
+.shop_list .check i{
+    background: url("../images/address.png");
+    background-size: 75px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    float: left;
+    background-position: 40px 0;
+    position:absolute;
+    top: 32px;
+}
+.shop_list .content .p1{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.shop_list .content p{
+    margin: 0;
+    height: 25px;
+    line-height: 25px;
+}
+.shop_list .content .price{
+    color: #FF6699;
+}
+.shop_list .content .number .jia, .shop_list .content .number .jian{
+   padding: 4px 8px;
+    border:1px solid #FF6699;
+    border-radius: 14px;
+
+}
+.shop_list .content .number{
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+.shop_list .content .number .num{
+    padding: 5px 15px;
+    background-color: #F7F7F7;
+}
+.shop_list .delect{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.shop_list .delect i{
+    background: url("../images/address.png");
+    background-position: -16px 0px;
+    background-size: 72px;
+    width: 16px;
+    height: 12px;
+    display: inline-block;
+}
+.list2 .check i{
+    background-position: 18px 0;
+    height: 17px;
+}
+.settlement{
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    bottom: 71px;
+    width: 100%;
+}
+.settlement .left .select i{
+    background: url("../images/address.png");
+    background-size: 75px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    float: left;
+    background-position: 18px 0px;
+    position: relative;
+    top:10px;
+}
+.settlement .left .total .price{
+    color: #FFA3C0;
+}
+.settlement .right .content{
+    text-align: center;
+    background-color: #FF6699;
+    color: #fff;
+}
+.settlement .right{
+    position: relative;
+    height: 41px;
+    line-height: 41px;
+}
+.settlement .right:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid #fff;
+    position: absolute;
+    left: 0px;
+    top: 15px;
+}
+.footer_info .info1 i{
+    background: url("../images/img2.png");
+    background-size: 130px;
+    background-position:30px 0px;
+}
+.footer_info .info3 i{
+    background: url("../images/img2.png");
+    background-size: 130px;
+    background-position:-65px 4px;
+}

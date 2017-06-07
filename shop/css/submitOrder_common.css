@@ -1,0 +1,259 @@
+/*信息栏*/
+#order_info{
+    border: 6px solid transparent;
+    -webkit-border-image: url("../images/boreder1.png") 9 9 round;
+    -moz-border-image: url("../images/boreder1.png") 9 9 round;
+    -o-border-image: url("../images/boreder1.png") 9 9 round;
+    border-image: url("../images/boreder1.png") 9 9 round;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+#order_info .arrow i{
+    width: 7px;
+    height: 17px;
+    background: url("../images/left_arrow.png") no-repeat;
+    background-size: 7px;
+    display: block;
+    position: absolute;
+    right: 6px;
+    bottom:40px;
+}
+
+#order_info .car i{
+    background: url("../images/img3.png");
+    background-position: 60px 0;
+    background-size: 220px;
+    width: 60px;
+    height: 50px;
+    display: inline-block;
+}
+#order_info .car{
+    position: absolute;
+    bottom: -3px;
+    right: 9px;
+}
+/*付款方式*/
+.payment{
+    background-color: #fff;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.payment .method{
+    height: 40px;
+    line-height: 40px;
+}
+.payment .method i{
+    display: inline-block;
+    width: 22px ;
+    height: 20px;
+    background: url("../images/img3.png");
+    background-size: 180px;
+    background-position: -57px 0;
+    vertical-align: middle;
+}
+.payment .wechat_pay{
+    color: #777777;
+    height: 40px;
+    line-height: 40px;
+}
+/*配送信息 发票*/
+
+.plrb_15{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+.pd_15{
+    padding: 15px;
+}
+.info_title{
+    height: 40px;
+    line-height: 40px;
+
+}
+.distribution, .receipt{
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.distribution .info_title .image{
+    background-position: -84px 0px;
+}
+.info_title .image{
+    display: inline-block;
+    background: url("../images/img3.png");
+    background-size: 190px;
+    width: 22px ;
+    height: 21px;
+    vertical-align: middle;
+}
+.way{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    color: #A9A9A9;
+}
+.way .p2{
+    margin: 0;
+}
+
+.receipt .info_title .image{
+    background-position: 4px 0;
+}
+
+/*商品清单*/
+.listing{
+    margin-bottom:10px;
+    background-color: #fff;
+}
+/*.listing  .info_title{*/
+/*margin-bottom: 1px;*/
+/*}*/
+.info_title{
+    background-color: #fff;
+}
+.info_title .image{
+    background-position: -17px 0;
+}
+.product{
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.product .image{
+    padding-right: 5px;
+}
+.product .content .p1{
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.product .content .info{
+    margin-bottom: 5px;
+}
+.product .content .info span{
+    padding-right: 10px;
+    display: inline-block;
+    color: #C9C9C9;
+}
+.product .content .p2{
+    color: #FF93B5;
+}
+.product .content .arrow i{
+    background: url("../images/left_arrow.png") no-repeat;
+    width: 7px;
+    height: 12px;
+    background-size: 6px;
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+}
+.integral{
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+
+}
+.integral .info_title .image{
+    background-position: -37px 0px;
+}
+.integral .content{
+    padding:5px;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+}
+.integral .content p{
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 1em;
+    color: #717171;
+}
+.integral .pd_lf{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.integral .content .box {
+    text-align: center;
+    background-color: #fff;
+    height: 30px;
+    line-height: 30px;
+}
+.integral .content_box{
+    /*padding-bottom: 10px;*/
+}
+.coupon{
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+}
+
+.coupon .info_title .image{
+    background-position: -107px 3px;
+}
+.coupon .down .content{
+    background-color: #f2f2f2;
+    padding: 10px;
+
+}
+.coupon .down .content .down_arrow{
+    padding: 15px;
+    background-color: #fff;
+    display: inline-block;
+    float: right;
+    position: relative;
+    bottom: 5px;
+}
+.coupon .down .content .down_arrow i{
+    background: url("../images/bottom_arrow.png");
+    width: 18px;
+    height: 7px;
+    background-size: 16px;
+    display: inline-block;
+    position: absolute;
+    left:7px;
+    top:12px;
+}
+/*付款详情*/
+.pay_details{
+    background-color: #fff;
+    padding-top: 10px;
+    color: #AFAFAF;
+    margin-bottom: 20px;
+}
+.pay_details .info1 li{
+    line-height: 20px;
+}
+.coping{
+    background-color: #fff;
+    height: 60px;
+    line-height: 60px;
+}
+.coping .pay{
+
+    font-size: 16px;
+}
+.coping .pay .num{
+    color: #FF6699;
+}
+.coping .settlement{
+    text-align: center;
+    background-color: #FF6699;
+    color: #fff;
+    position: relative;
+}
+.coping .settlement:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fff;
+    position: absolute;
+    bottom: 33%;
+    left: 0px;
+}

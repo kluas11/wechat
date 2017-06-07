@@ -1,0 +1,54 @@
+/*顶部搜索兰*/
+#search{
+    height: 65px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+#search .search_img{
+    background:url("../images/detail1.png") no-repeat;
+    width:16px;
+    height:20px;
+    background-size: 16px;
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    left: 30px;
+}
+#search .search_input{
+    position: relative;
+    overflow: hidden;
+    margin-top: 15px;
+}
+#search .content{
+    height: 35px;
+    border: 1px solid #f2f2f2;
+    border-radius: 25px;
+    width: 100%;
+    text-indent:3em;
+    background-color: #F2F2F2;
+    outline: none;
+}
+#search .search_title{
+    text-align: center;
+    margin-top: 15px;
+    background-color: #FF6699;
+    border-radius: 16px;
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+.no_content{
+    margin-top: 100px;
+    text-align: center;
+}
+.no_content .title img{
+    width: 60%;
+}
+.no_content .title {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!--链接bootstrap样式表-->
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <!--链接共同样式-->
+        <link rel="stylesheet" href="css/common.css">
+        <!--链接内部样式表-->
+        <link rel="stylesheet" href="css/shop_cart.css">
+</head>
+<body>
+<div class="container-fluid">
+    <!--购物车没有商品-->
+    <div class="row  no_shop">
+        <div class="col-xs-12 content">
+        <img src="images/shopcar_03.png" alt="" >&nbsp;&nbsp;
+        <a href="" style="color: #42B4DD" >去逛逛</a>
+        </div>
+    </div>
+    <!--图片-->
+    <div class="row image">
+        <div class="col-xs-12 box">
+            <img src="images/shopcar2.png" alt="">
+        </div>
+    </div>
+    <!--底部-->
+    <div class="row footer_info bg_w">
+        <div class="col-xs-3 info1 mr_t">
+            <i></i>
+            <p >首页</p></div>
+        <div class="col-xs-3 info2 mr_t"><i></i>
+            <p >分类</p></div>
+        <div class="col-xs-3 info3 mr_t"><i></i>
+            <p class="active">购物车</p></div>
+        <div class="col-xs-3 info4 mr_t"><i></i>
+            <p>我</p></div>
+    </div>
+</div>
+</body>
+</html>
+<!--链接jquery-->
+<script src="js/jquery-1.11.3/jquery.min.js"></script>
+<!--链接bootstrap JS文件-->
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script>
+    $('.info1').click(function () {
+        window.location.href='index.html';
+
+    })
+    $(".info2").click(function () {
+        window.location.href='classification.html';
+    })
+    $(".info4").click(function () {
+        window.location.href='personalcenter/personal_page.html';
+    })
+</script>

@@ -1,0 +1,61 @@
+p{
+  margin: 0;
+}
+.text_overflow{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.line_height(@h:25px){
+  line-height: @h;
+}
+.pd_10{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+//选择按钮
+.checkbox(@x:47px,@y:0px){
+  background: url("../images/apply.png");
+  background-position: @x @y;
+  width: 22px;
+  height: 20px;
+  background-size: 88px;
+  display: inline-block;
+  position: relative;
+  top: 26px;
+
+}
+//申请售后的商品
+.shop{
+  border-bottom: 1px solid #f2f2f2;
+  .pd_10;
+  //选择按钮
+  .check{
+    i{
+      .checkbox();
+    }
+  }
+  //信息
+  .info{
+    .title{
+      .text_overflow;
+    }
+    .spe_info{
+      color: #BEBEBE;
+      font-size: 12px;
+      .line_height();
+    }
+    .price{
+      color: #FF6699;
+      .line_height();
+    }
+
+  }
+}
+.list2{
+  .check{
+    i{
+      .checkbox(22px);
+    }
+  }
+}

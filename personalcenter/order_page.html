@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--链接bootstrao样式表-->
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!--链接共同样式-->
+    <link rel="stylesheet" href="../css/common.css">
+    <!--链接内部样式表-->
+    <link rel="stylesheet" href="css/order_page.css">
+</head>
+<body>
+<div class="container-fluid">
+    <!--导航-->
+    <ul class="row nav bgw">
+        <li class="col-xs-3 content active all">
+
+                    <span class="">全部</span>
+
+            </li>
+        <li class="col-xs-3 content receipt_title">
+
+                <span>代付款</span>
+
+        </li>
+        <li class="col-xs-3 content recevied_title">
+
+                <span >待收货</span>
+
+        </li>
+        <li class="col-xs-3 content evaluation_title">
+                <span >待评价</span>
+        </li>
+    </ul>
+    <!--订单内容-->
+    <!--代收款-->
+    <div class="row order_content bgw" id="receipt">
+    <!--订单时间 编号 状态-->
+    <div class="col-xs-12 same">
+        <div class="col-xs-9 order_info pl0">
+            <p>订单编号:88888888</p>
+            <p>下单时间: <span>2014-8-14</span> <span>14:20:30</span></p>
+        </div>
+        <div class="col-xs-3 pending pr0 pl0">
+            <span class="payment">代付款</span>
+        </div>
+    </div>
+    <!--商品信息-->
+    <div class="col-xs-12 same">
+        <div class="col-xs-3 shop_img  pr0 pl0">
+            <img src="images/order1.png" alt="" class="pic">
+        </div>
+        <div class="col-xs-9 shop_info pr0">
+            <p>韩都衣舍秋冬装新款女装长袖宽松版型型型型型型</p>
+            <div class="num">
+                <span>x2</span>&nbsp;&nbsp;规格：
+                <span>"白色"</span>&nbsp;
+                <span>"S"</span>
+            </div>
+            <span class="cor">￥200.00</span>
+            <i class="arrow"></i>
+        </div>
+    </div>
+    <!--价格信息-->
+    <div class="col-xs-12 same price_box">
+        <div class="info">
+            共 <span class="num">1</span> 件商品，合计: <span class="price">￥200.00</span>
+        </div>
+        <div class="price_btn">
+            <span class="active same">付款</span>
+            <span class="same">取消订单</span>
+        </div>
+    </div>
+</div>
+    <!--待收货-->
+    <div class="row order_content  bgw" id="recevied" >
+        <!--订单时间 编号 状态-->
+        <div class="col-xs-12 same">
+            <div class="col-xs-9 order_info pl0">
+                <p>订单编号:88888888</p>
+                <p>下单时间: <span>2014-8-14</span> <span>14:20:30</span></p>
+            </div>
+            <div class="col-xs-3 pending pr0 pl0">
+                <span class="payment">待收货</span>
+            </div>
+        </div>
+        <!--商品信息-->
+        <div class="col-xs-12 same">
+            <div class="col-xs-3 shop_img  pr0 pl0">
+                <img src="images/order1.png" alt="" class="pic">
+            </div>
+            <div class="col-xs-9 shop_info pr0">
+                <p>韩都衣舍秋冬装新款女装长袖宽松版型型型型型型</p>
+                <div class="num">
+                    <span>x2</span>&nbsp;&nbsp;规格：
+                    <span>"白色"</span>&nbsp;
+                    <span>"S"</span>
+                </div>
+                <span class="cor">￥200.00</span>
+                <i class="arrow"></i>
+            </div>
+        </div>
+        <!--价格信息-->
+        <div class="col-xs-12 same price_box">
+            <div class="info">
+                共 <span class="num">1</span> 件商品，合计: <span class="price">￥200.00</span>
+            </div>
+            <div class="price_btn">
+                <span class="active same">查看物流</span>
+                <span class="active same">确认收货</span>
+            </div>
+        </div>
+    </div>
+    <!--待评价-->
+    <div class="row order_content bgw" id="evaluation" >
+        <!--订单时间 编号 状态-->
+        <div class="col-xs-12 same">
+            <div class="col-xs-9 order_info pl0">
+                <p>订单编号:88888888</p>
+                <p>下单时间: <span>2014-8-14</span> <span>14:20:30</span></p>
+            </div>
+            <div class="col-xs-3 pending pr0 pl0">
+                <span class="payment">待评价</span>
+            </div>
+        </div>
+        <!--商品信息-->
+        <div class="col-xs-12 same">
+            <div class="col-xs-3 shop_img  pr0 pl0">
+                <img src="images/order1.png" alt="" class="pic">
+            </div>
+            <div class="col-xs-9 shop_info pr0">
+                <p>韩都衣舍秋冬装新款女装长袖宽松版型型型型型型</p>
+                <div class="num">
+                    <span>x2</span>&nbsp;&nbsp;规格：
+                    <span>"白色"</span>&nbsp;
+                    <span>"S"</span>
+                </div>
+                <span class="cor">￥200.00</span>
+                <i class="arrow"></i>
+            </div>
+        </div>
+        <!--价格信息-->
+        <div class="col-xs-12 same price_box">
+            <div class="info">
+                共 <span class="num">1</span> 件商品，合计: <span class="price">￥200.00</span>
+            </div>
+            <div class="price_btn">
+                <span class="active same">评价</span>
+
+            </div>
+        </div>
+    </div>
+    <!--交易完成-->
+    <div class="row order_content trading_complete bgw" >
+        <!--订单时间 编号 状态-->
+        <div class="col-xs-12 same">
+            <div class="col-xs-9 order_info pl0">
+                <p>订单编号:88888888</p>
+                <p>下单时间: <span>2014-8-14</span> <span>14:20:30</span></p>
+            </div>
+            <div class="col-xs-3 pending pr0 pl0">
+                <span class="payment">交易完成</span>
+            </div>
+        </div>
+        <!--商品信息-->
+        <div class="col-xs-12 same">
+            <div class="col-xs-3 shop_img  pr0 pl0">
+                <img src="images/order1.png" alt="" class="pic">
+            </div>
+            <div class="col-xs-9 shop_info pr0">
+                <p>韩都衣舍秋冬装新款女装长袖宽松版型型型型型型</p>
+                <div class="num">
+                    <span>x2</span>&nbsp;&nbsp;规格：
+                    <span>"白色"</span>&nbsp;
+                    <span>"S"</span>
+                </div>
+                <span class="cor">￥200.00</span>
+                <i class="arrow"></i>
+            </div>
+        </div>
+        <!--价格信息-->
+        <div class="col-xs-12 same price_box">
+            <div class="info">
+                共 <span class="num">1</span> 件商品，合计: <span class="price">￥200.00</span>
+            </div>
+            <!--<div class="price_btn">-->
+                <!--<span class="active same">付款</span>-->
+                <!--<span class="same">取消订单</span>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <!--交易取消-->
+    <div class="row order_content trading_closed bgw" >
+        <!--订单时间 编号 状态-->
+        <div class="col-xs-12 same">
+            <div class="col-xs-9 order_info pl0">
+                <p>订单编号:88888888</p>
+                <p>下单时间: <span>2014-8-14</span> <span>14:20:30</span></p>
+            </div>
+            <div class="col-xs-3 pending pr0 pl0">
+                <span class="payment">交易取消</span>
+            </div>
+        </div>
+        <!--商品信息-->
+        <div class="col-xs-12 same">
+            <div class="col-xs-3 shop_img  pr0 pl0">
+                <img src="images/order1.png" alt="" class="pic">
+            </div>
+            <div class="col-xs-9 shop_info pr0">
+                <p>韩都衣舍秋冬装新款女装长袖宽松版型型型型型型</p>
+                <div class="num">
+                    <span>x2</span>&nbsp;&nbsp;规格：
+                    <span>"白色"</span>&nbsp;
+                    <span>"S"</span>
+                </div>
+                <span class="cor">￥200.00</span>
+                <i class="arrow"></i>
+            </div>
+        </div>
+        <!--价格信息-->
+        <div class="col-xs-12 same price_box">
+            <div class="info">
+                共 <span class="num">1</span> 件商品，合计: <span class="price">￥200.00</span>
+            </div>
+            <!--<div class="price_btn">-->
+                <!--<span class="active same">付款</span>-->
+                <!--<span class="same">取消订单</span>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<!--链接jquery-->
+<script src="../js/jquery-1.11.3/jquery.min.js"></script>
+<!--链接bootstrap JS文件-->
+<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script>
+    $(".nav li").click(function (){
+        $(this).addClass('active').siblings('li').removeClass('active');
+    })
+    $('.receipt_title').click(function () {
+        $('#receipt').show().siblings('div').hide();
+    })
+    $('.all').click(function () {
+        $('.order_content').show();
+    })
+    $('.recevied_title').click(function () {
+        $('#recevied').show().siblings('div').hide();
+
+    })
+    $('.evaluation_title').click(function () {
+        $('#evaluation').show().siblings('div').hide();
+
+    })
+</script>

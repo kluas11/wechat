@@ -1,0 +1,25 @@
+
+.comment{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    margin-bottom: 1px;
+}
+.comment .user .name {
+  margin-top: 13px;
+}
+.comment .user .name p{
+    margin-left: 10px;
+}
+.comment .content p{
+    margin-left: 60px;
+}
+.comment .details{
+    color: #D5D5D5;
+}
+.images{
+    padding-left: 70px;
+}
+.mar_c{
+    margin:10px auto;
+}

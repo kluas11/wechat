@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>发票信息</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--链接bootstrap样式表-->
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!--链接共同样式-->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/address.commons.css">
+    <!--链接内部样式表-->
+    <link rel="stylesheet" href="./css/invoice_info.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row bgw iv_type allsame" >
+        <div class=" col-xs-12 title">发票类型</div>
+        <div class=" col-xs-12 option">
+            <div class="content">
+                <div class="  col-xs-4 unit">
+                    <i></i>
+                    <span>单位</span>
+                </div>
+                <div class="col-xs-8 personal">
+                    <i></i>
+                    <span>个人</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row bgw allsame invoice" >
+        <div class=" col-xs-12 title">发票类型</div>
+        <div class=" col-xs-12 option">
+            <div class="content">
+                <div class="  col-xs-4 unit">
+                    <i></i>
+                    <span>单位</span>
+                </div>
+                <div class="col-xs-8 personal">
+                    <i></i>
+                    <span>个人</span>
+                    <input type="text" class="company bgw" placeholder="请填写公司名称">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--保存-->
+    <div class="row sbmit center-block">
+        <input type="submit" class="save" value="保存"/>
+    </div>
+</div>
+</body>
+</html>
+<!--链接Jquery-->
+<script src="../js/jquery-1.11.3/jquery.min.js"></script>
+<!--链接bootstrao JS文件-->
+<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>

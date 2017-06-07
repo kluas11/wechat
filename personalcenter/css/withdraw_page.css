@@ -1,0 +1,53 @@
+body{
+    background-color: #fff;
+}
+.same{
+    outline: none;
+    border: none;
+    background-color: #f2f2f2;
+    text-indent: 1em;
+}
+.way .title{
+    line-height: 30px;
+}
+.way{
+   margin-top: 10px;
+    line-height: 30px;
+}
+.way .down_arrow{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: #fff;
+    text-align: center;
+    position:absolute;
+    right: 18px;
+}
+.way .down_arrow i{
+    display: inline-block;
+    background:url("../images/bottom_arrow.png") no-repeat;
+    background-size: 12px;
+    width: 12px;
+    height: 10px;
+    /*position: absolute;*/
+    /*top: 10px;*/
+
+}
+.way .down{
+    min-width: 160px;
+    right: 0;
+    text-align: center;
+}
+.sbm{
+    text-align: center;
+    margin-top: 30px;
+}
+.sbm button{
+    width: 60%;
+    color: #FF679A;
+    border: 1px solid #FF679A;
+    border-radius: 25px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+}

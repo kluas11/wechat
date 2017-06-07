@@ -1,0 +1,46 @@
+.coupon1{
+    /*margin: 15px;*/
+    padding: 10px 20px;
+}
+.coupon1 .content{
+    background-color: #FF689B;
+    height: 122px;
+    position: relative;
+
+}
+.coupon1 .content .left{
+    background:url("../images/coupon1_03.png") repeat-y;
+    height: 122px;
+    width: 10px;
+    position: absolute;
+    left: -9px;
+    display: inline-block;
+    background-size: 10px;
+}
+.coupon1 .content .right{
+    background:url("../images/coupon2_05.png") repeat-y;
+    height: 122px;
+    width: 12px;
+    position: absolute;
+    right: -11px;
+    display: inline-block;
+    background-size: 12px;
+
+}
+.coupon1 .juan{
+color: rgba(255,255,255,0.2);
+    font-size: 111px;
+    position: absolute;
+    left: -10px;
+    top:-22px;
+}
+.coupon1 .circle{
+    border: 2px solid rgba(255,255,255,0.2);
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    left: -35px;
+    top: -15px;
+}

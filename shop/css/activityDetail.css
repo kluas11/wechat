@@ -1,0 +1,179 @@
+
+/*顶部搜索兰*/
+#search{
+    height: 65px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+#search .search_img{
+    background:url("../images/detail1.png") no-repeat;
+    width:16px;
+    height:20px;
+    background-size: 16px;
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    left: 30px;
+}
+#search .search_input{
+   position: relative;
+    overflow: hidden;
+    margin-top: 15px;
+}
+#search .content{
+    height: 35px;
+    border: 1px solid #f2f2f2;
+    border-radius: 25px;
+    width: 100%;
+    text-indent:3em;
+    background-color: #F2F2F2;
+    outline: none;
+}
+#search .search_title{
+    text-align: center;
+    margin-top: 15px;
+}
+#search .search_title {
+    display: inline-block;
+    width: 100%;
+    height:35px;
+    line-height: 35px;
+    border-radius: 16px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #FF6699;
+}
+/*导航*/
+#nav{
+
+    position: relative;
+    background-color: #fff;
+    z-index: 2;
+}
+#nav .nav_list{
+    position: relative;
+    text-align: center;
+}
+#nav .nav_list span{
+   color: #BBBBBB;
+    font-size: 18px;
+    font-weight: 500;
+}
+#nav .nav_list .down{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../images/bottom_arrow.png") no-repeat;
+    background-size: 14px;
+    position: relative;
+    top: 5px;
+    right: 0px;
+}
+#nav .active span{
+    color: #FF8BB0;
+    text-align: center;
+}
+#nav .active .down_arrow{
+    display: inline-block;
+    width: 15px;
+    height: 9px;
+    background: url("../images/bottom_arrow.png") no-repeat;
+    background-size: 15px;
+    position: relative;
+    right: 19px;
+    top: 5px;
+}
+#nav .active .top_arrow{
+    display: inline-block;
+    width: 16px;
+    height: 9px;
+    background: url("../images/top_arrow.png") no-repeat;
+    background-size: 16px;
+    position: relative;
+    right: 0px;
+    top:-5px;
+}
+.list2 .show_car{
+    padding-left: 12px;
+    padding-right: 10px;
+    padding-top: 13px;
+    padding-bottom: 8px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+    box-shadow: 0 4px 20px 0 #9d9d9d ;
+    background-color: #fff;
+}
+.list2 .show_car i{
+    width: 28px;
+    height: 22px;
+    display: inline-block;
+    background: url("../images/zh4.png") no-repeat;
+    background-size: 25px;
+    background-position: 0px 0px;
+}
+.list2 .show_car .zero{
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #FF95B6;
+    color: #fff;
+    position: absolute;
+    bottom: 25px;
+    right: 9px;
+}
+.list2 .fire {
+    right: 14px;
+}
+.zh .down_menu:before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 8px solid transparent ;
+    border-right: 8px solid transparent ;
+    border-bottom: 8px solid #fff ;
+    position: absolute;
+    top:-5px;
+    left: 13px;
+}
+
+.nav_list .down_menu, .nav_list .down_menu1{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    left: 25px;
+    margin-top: 20px;
+    text-align: left;
+    text-indent: 1em;
+}
+.nav_list .down_menu .active{
+    color: #FF8BB7;
+}
+.nav_list .down_menu li, .nav_list .down_menu1 li{
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    margin-bottom: 2px;
+    /*border-bottom: 1px solid rgba(8,8,8,0.5);*/
+}
+.footer_info{
+    z-index: 3;
+}
+.cover{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(8,8,8,0.5);
+    position: absolute;
+    top: 0px;
+    display: none;
+    /*z-index: 1;*/
+
+}

@@ -1,0 +1,20 @@
+p{
+    margin: 0;
+}
+.info{
+    padding: 10px 10px 0px;
+}
+.info .content{
+    overflow: hidden;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-bottom: 1px;
+}
+.info .content .right{
+    text-align: right;
+    color: #DFDFDF;
+}
+.info .content .left .time{
+    color: #dfdfdf;
+    font-size: 12px;
+}

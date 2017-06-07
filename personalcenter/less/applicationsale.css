@@ -1,0 +1,51 @@
+p {
+  margin: 0;
+}
+.text_overflow {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.pd_10 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.shop {
+  border-bottom: 1px solid #f2f2f2;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.shop .check i {
+  background: url("../images/apply.png");
+  background-position: 47px 0px;
+  width: 22px;
+  height: 20px;
+  background-size: 88px;
+  display: inline-block;
+  position: relative;
+  top: 26px;
+}
+.shop .info .title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.shop .info .spe_info {
+  color: #BEBEBE;
+  font-size: 12px;
+  line-height: 25px;
+}
+.shop .info .price {
+  color: #FF6699;
+  line-height: 25px;
+}
+.list2 .check i {
+  background: url("../images/apply.png");
+  background-position: 22px 0px;
+  width: 22px;
+  height: 20px;
+  background-size: 88px;
+  display: inline-block;
+  position: relative;
+  top: 26px;
+}

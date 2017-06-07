@@ -1,0 +1,202 @@
+/*顶部个人信息栏*/
+#header{
+    background: url("../images/personal (11).png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+
+}
+#header .content{
+    padding:20px 15px 15px;
+}
+#header .content .image img{
+    padding: 4px;
+    border-radius: 50%;
+    border: 2px solid #FAC4C2;
+}
+
+#header .content .info{
+    color: #fff;
+    margin-top: 14px;
+}
+#header .content .info .name p{
+    margin: 0;
+    line-height: 20px;
+    display: block;
+}
+#header .content .info .receipt{
+    line-height: 20px;
+    text-align: right;
+}
+#header .content .info .receipt a{
+    color: #fff;
+}
+#header .content .info .receipt i{
+    background: url("../images/img1.png");
+    background-size: 100px;
+    width: 15px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+/*关注列表*/
+.attention .content{
+    padding-bottom: 10px;
+}
+.attention .content .list span{
+    display: block;
+    text-align: center;
+}
+.attention .content .list .title{
+    color: #AAAAAA;
+}
+.attention{
+    margin-bottom: 10px;
+}
+/*我的订单*/
+.order{
+    background-color: #fff;
+
+}
+
+.order .title{
+    border-bottom:1px solid #f2f2f2;
+    height: 50px;
+    line-height: 50px;
+}
+.title  .left i{
+    background: url("../images/img2.png") ;
+    background-size: 130px;
+    background-position: 0px 25px;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+   position: relative;
+    top:7px;
+}
+.title  .right{
+    text-align: right;
+}
+.title  .right i{
+    background: url("../images/perarrow_03.png") no-repeat;
+    background-size: 8px;
+    width: 10px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    top:3px;
+}
+.title  .right .check{
+    color: #CDCDCD;
+}
+ .order .info{
+    background-color: #fff;
+}
+.order{
+    margin-bottom: 10px;
+}
+.order .info .list i{
+    background: url("../images/img1.png");
+    width: 27px;
+    height: 23px;
+    display: block;
+    margin: 0px auto 5px;
+    background-size: 100px;
+}
+.order .info .list1 i{
+    background-position: 26px 0px;
+
+}
+.order .info .list2 i{
+    background-position: 70px 0px;
+
+}
+.order .info .list3 i{
+    background-position: 2px 24px;
+
+}
+.order .info .list4 i{
+    background-position: -36px 23px;
+
+}
+.order .info .list {
+    position: relative;
+    text-align: center;
+}
+.order .info{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.order .info .list span{
+    color:#B7B7B7 ;
+}
+/*我的积分*/
+.same{
+    height: 40px;
+    line-height: 40px;
+}
+.same .left i{
+    background: url("../images/img2.png");
+    background-size: 130px;
+    background-position: -35px 25px;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    top:7px;
+}
+.same .arrow{
+    text-align: right;
+}
+.same  .arrow i{
+    background: url("../images/perarrow_03.png") no-repeat;
+    background-size: 8px;
+    width: 10px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    top:3px;
+
+}
+.integral{
+    margin-bottom: 1px;
+}
+.offer .left i{
+    background-position:-73px 26px ;
+}
+.offer, .my_shop{
+    margin-bottom: 10px;
+}
+.Distribution, .chooseshop, .myd_n{
+    margin-bottom: 1px;
+}
+.Distribution .left i{
+    background-position:-106px 0px ;
+
+}
+.chooseshop .left i{
+    background-position:-0px 0px ;
+
+}
+.myd_n .left i{
+    background-position:-37px 0px ;
+
+}
+.my_shop .left i{
+    background-position:-73px 0px ;
+
+}
+.my_shop{
+    margin-bottom: 80px;
+}
+.footer_info .info1 i{
+    background: url("../images/img3.png");
+    background-size: 130px;
+    background-position:30px 0px;
+}
+.footer_info .info4 i{
+    background: url(../images/img3.png);
+    background-size: 130px;
+    background-position: 0px 4px;
+    width: 21px;
+}

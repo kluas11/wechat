@@ -1,0 +1,31 @@
+
+#species_list{
+    padding-top: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+#species_list li span{
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    margin-top: 10px;
+}
+#species_list li{
+    margin-bottom: 10px;
+    height: 110px;
+}
+#species_list li a{
+    height: 100%;
+    display: block;
+}
+.footer_info .info1 i{
+    background: url("../images/img2.png");
+    background-size: 130px;
+    background-position:30px 0px;
+}
+.footer_info .info2 i{
+    background: url("../images/img2.png");
+    background-size: 134px;
+    background-position:-30px 2px;
+}

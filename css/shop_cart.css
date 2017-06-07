@@ -1,0 +1,26 @@
+.no_shop .content img{
+   width: 45%;
+}
+.no_shop{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.no_shop .content{
+    text-align: center;
+}
+.image .box img{
+    width: 36%;
+}
+.image .box{
+    text-align: center;
+}
+.footer_info .info1 i{
+    background: url("../images/img2.png");
+    background-size: 130px;
+    background-position:30px 0px;
+}
+.footer_info .info3 i{
+    background: url("../images/img2.png");
+    background-size: 130px;
+    background-position:-65px 4px;
+}

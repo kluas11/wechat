@@ -1,0 +1,13 @@
+.no_content{
+    margin-top: 100px;
+    text-align: center;
+}
+.no_content .title img{
+    width: 60%;
+}
+.no_content .title {
+    margin-bottom: 20px;
+}
+.no_content .image img{
+    width: 37%;
+}

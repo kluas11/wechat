@@ -1,0 +1,26 @@
+.Avatar_box{
+    padding: 15px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.Avatar_box .title{
+    float: left;
+}
+.Avatar_box .image{
+    float: right;
+}
+.same_box{
+    padding: 15px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.same_box .right{
+  text-align: right;
+}
+.address .right i{
+    display: inline-block;
+    background: url("../images/perarrow_03.png") no-repeat;
+    width: 8px;
+    height: 14px;
+    background-size: 8px;
+    position: relative;
+    top: 2px;
+}

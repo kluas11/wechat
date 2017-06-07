@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>支付成功</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--链接bootstrap样式表-->
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!--链接共同样式-->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/address.commons.css">
+    <!--链接内部样式表-->
+    <link rel="stylesheet" href="css/pay_result.css">
+</head>
+<body>
+<div class="container-fluid">
+    <!--成功提示-->
+    <div class="row prompt pay_success">
+        <div class="col-xs-5 logo">
+            <img src="images/paysuccess.png" alt="" class="pic">
+        </div>
+        <div class="col-xs-7 title pl0"><span class="success" style="width: 150px">您已经支付成功~</span></div>
+    </div>
+    <!--失败提示 -->
+    <!--<div class="row prompt pay_fail">-->
+        <!--<div class="col-xs-5 logo">-->
+            <!--<img src="images/pay_fail.png" alt="" class="pic">-->
+        <!--</div>-->
+        <!--<div class="col-xs-7 title pl0"><span class="success">您支付失败，请重新支付~</span></div>-->
+    <!--</div>-->
+    <!--详细信息-->
+    <div class="row info">
+        <div class=" list">
+            <span class="col-xs-3 pr0 pl0">订单信息:</span><span class="col-xs-9 pl0">123456789</span>
+            <span class="col-xs-3  pr0 pl0">订单金额:</span><span class="col-xs-9 pl0">￥128.00</span>
+            <span class="col-xs-3 pr0 pl0">收货人:</span><span class="col-xs-9 pl0">张三</span>
+            <span class="col-xs-3 pr0 pl0">手机号码:</span><span class="col-xs-9 pl0">13800138000</span>
+            <span class="col-xs-3 pr0 pl0">收货地址:</span><span class="col-xs-9 pl0">广东省 广州市 天河区 中山大道西191号</span>
+        </div>
+</div>
+    <!--前往个人中心-->
+    <div class="row new_address center-block">
+        <span >前往个人中心</span>
+    </div>
+
+</body>
+</html>
+<!--链接jquery-->
+<script src="../js/jquery-1.11.3/jquery.min.js"></script>
+<!--链接bootstrap JS文件-->
+<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>

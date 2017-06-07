@@ -1,0 +1,16 @@
+.logistics .view .content{
+    text-align: right;
+}
+.logistics .view .content span {
+    padding: 5px 10px;
+    border: 1px solid #FF6A9C;
+    border-radius: 25px;
+    color: #FF6A9C;
+    display: inline-block;
+
+}
+.logistics {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}

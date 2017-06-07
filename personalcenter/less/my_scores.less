@@ -1,0 +1,55 @@
+@color:#A9A9A9;
+p{
+  margin: 0;
+  //display: inline-block;
+}
+//空心圆
+.circle{
+  text-align: center;
+  .hollow{
+    display: inline-block;
+    width: 101px;
+    height: 101px;
+    border: 2px solid #F9A23C;
+    border-radius: 50%;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    .solid{
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: #F9A23C;
+      position: absolute;
+      top:4px ;
+      left: 4px;
+      color: #fff;
+      p{
+        margin-top: 22px;
+      }
+      .num{
+        font-size: 22px;
+        font-weight: 700;
+      }
+    }
+  }
+
+}
+//下面信息
+.info {
+  margin: 15px;
+  .box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom:  1px solid #f2f2f2 ;
+    .time {
+      color: @color;
+    }
+  }
+  .scores {
+    color: @color;
+    float: right;
+    margin-top: 10px;
+  }
+
+}

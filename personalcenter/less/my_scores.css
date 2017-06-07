@@ -1,0 +1,49 @@
+p {
+  margin: 0;
+}
+.circle {
+  text-align: center;
+}
+.circle .hollow {
+  display: inline-block;
+  width: 101px;
+  height: 101px;
+  border: 2px solid #F9A23C;
+  border-radius: 50%;
+  margin-top: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.circle .hollow .solid {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #F9A23C;
+  position: absolute;
+  top: 4px ;
+  left: 4px;
+  color: #fff;
+}
+.circle .hollow .solid p {
+  margin-top: 22px;
+}
+.circle .hollow .solid .num {
+  font-size: 22px;
+  font-weight: 700;
+}
+.info {
+  margin: 15px;
+}
+.info .box {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f2f2f2 ;
+}
+.info .box .time {
+  color: #a9a9a9;
+}
+.info .scores {
+  color: #a9a9a9;
+  float: right;
+  margin-top: 10px;
+}

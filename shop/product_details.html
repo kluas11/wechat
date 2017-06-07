@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--链接bootstrap 样式表-->
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!--链接共同样式-->
+    <link rel="stylesheet" href="../css/common.css">
+    <!--swiper样式表-->
+    <link rel="stylesheet" href="../bower_components/swiper/dist/css/swiper.min.css">
+    <!--链接内部样式表-->
+    <link rel="stylesheet" href="./css/product_details.css">
+</head>
+<body>
+<!--遮罩层-->
+<div class="cover"></div>
+<div class="container-fluid">
+    <!--顶部轮播图-->
+    <div class="row" id="head_lunbo">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/details2.png" alt="" class="pic"></div>
+                <div class="swiper-slide"><img src="images/details2.png" alt="" class="pic"></div>
+                <div class="swiper-slide"><img src="images/details2.png" alt="" class="pic"></div>
+                <div class="swiper-slide"><img src="images/details2.png" alt="" class="pic"></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!--&lt;!&ndash; 如果需要导航按钮 &ndash;&gt;-->
+            <!--<div class="swiper-button-prev"></div>-->
+            <!--<div class="swiper-button-next"></div>-->
+
+            <!--&lt;!&ndash; 如果需要滚动条 &ndash;&gt;-->
+            <!--<div class="swiper-scrollbar"></div>-->
+        </div>
+        <div class="icon_box"><i></i></div>
+    </div>
+    <!--价格信息-->
+    <div class="row price_info" >
+            <div class=" col-xs-12 pl0 info">
+                <span>韩都衣舍秋冬装新款女装长袖宽松版型 镂空图案长袖设计 舒适面料宽松图案镂空针织衫</span></div>
+            <div class="col-xs-12 pl0 price pr0">
+                <strong >￥<span class="one">176.00</span></strong>
+                <span class="two">￥259.00</span>
+            </div>
+    </div>
+    <!--产品规格-->
+    <div class="row price_info spec">
+        <div class="col-xs-12  pl0">
+        <p>选择产品规格</p>
+        <i class="r_arrow"></i>
+
+        </div>
+    </div>
+    <!--宝贝评价-->
+    <div class="row price_info evaluation">
+        <div class="col-xs-12  pl0">
+        <p>宝贝评价<span>(88)</span></p>
+            <i class="r_arrow"></i>
+        </div>
+    </div>
+    <!--店铺入口-->
+    <div class="row shop_in">
+        <div class="col-xs-3 left pr0">
+            <div class="content">
+                <img src="images/find2.png" alt="" class="pic">
+                <span class="tag">No.1</span>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="title">
+                <p>BEAUTI</p>
+                <P class="hui">245关注</P>
+            </div>
+        </div>
+        <div class="col-xs-5 right">
+            <div class=" content">
+                <span>进入店铺</span>
+            </div>
+            <span class="colr">查看全部商品</span>
+        </div>
+
+    </div>
+    <!--查找更多-->
+    <div class="row find">
+        <div class="col-xs-12">
+        <div class="col-xs-3 divider line" ></div>
+        <div class="col-xs-6 pr0 pl0">继续滑动,查找更多</div>
+        <div class="col-xs-3 divider line" ></div>
+        </div>
+        <div class="col-xs-12 pr0 pl0 image">
+            <img src="images/detail4.png" alt="" class="pic">
+    </div>
+</div>
+    <!--底部-->
+    <div class=" row footer ">
+        <div class="content">
+        <div class="col-xs-2  collection">
+            <i></i>
+            <span class="fz">收藏</span></div>
+        <div class="col-xs-4 pr0 pl0 shop_car"><span class="cor">加入购物车</span></div>
+        <div class="col-xs-4 pr0 pl0 buy"><span class="cor">立即购买</span></div>
+        <div class="col-xs-2 pr0 pl0 check">
+            <i></i>
+            <span class="fz">查看购物车</span>
+        </div>
+    </div>
+    </div>
+
+    <!--选择规格-->
+    <div  class="row" id="specification">
+        <!--头部商品信息-->
+        <div class="col-xs-12" id="header">
+            <div class="col-xs-4 pl0 image">
+                <img src="images/deatil3.png" alt="" class="pic">
+            </div>
+            <div class="col-xs-6 pr0 info">
+                <div class=" price">￥<span>178.0</span></div>
+                <div> 库存<span>88</span>件</div>
+                <div >已选&nbsp;&nbsp;<span>"白色"&nbsp;&nbsp;"S"</span></div>
+            </div>
+            <div class="col-xs-2 clo pr0 pl0">
+                <i></i>
+            </div>
+        </div>
+        <!--颜色-->
+        <div class="col-xs-12 color same">
+         <div class="title"><span >颜色</span></div>
+        <div class=" col-xs-12 content pl0">
+                <span class=" col-xs-3 active ">白色</span>
+                <span class="col-xs-3 ">红色</span>
+                <span class="col-xs-3 ">粉色</span>
+        </div>
+    </div>
+        <!--尺码-->
+        <div class="col-xs-12 size same" >
+            <div class=" col-xs-12 pl0 title"><span >尺码</span></div>
+            <div class="  col-xs-12 pl0 content">
+                <span class=" col-xs-3 active ">S</span>
+                <span class="col-xs-3 ">M</span>
+                <span class="col-xs-3 ">L</span>
+            </div>
+        </div>
+        <!--购买数量-->
+        <div class="col-xs-12 number">
+                <div class=" col-xs-4  pr0 pl0 title"><span>购买数量</span></div>
+                <div class=" col-xs-8 pr0 pl0 right">
+                    <span class="jia">+</span>
+                    <span class="shu">1</span>
+                    <span class="jian">-</span>
+                </div>
+        </div>
+        <!--确认-->
+        <div class="col-xs-12 queren ">
+            <div class=" box center-block">
+                <span>确定</span>
+            </div>
+        </div>
+</div>
+
+</div>
+</body>
+</html>
+<!--链接jquery-->
+<script src="../js/jquery-1.11.3/jquery.min.js"></script>
+<!--链接bootstrap js文件-->
+<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<!--链接swiper js文件-->
+<script src="../bower_components/swiper/dist/js/swiper.min.js"></script>
+<script>
+    var mySwiper= new Swiper('.swiper-container',{
+        autoplay:2000,
+        loop:true,
+//        分页器
+        pagination : '.swiper-pagination',
+        direction:'horizontal'
+//        // 如果需要前进后退按钮
+//        nextButton: '.swiper-button-next',
+//        prevButton: '.swiper-button-prev',
+//
+//        // 如果需要滚动条
+//        scrollbar: '.swiper-scrollbar',
+    });
+    $(window).scroll(function () {
+        var top=$(window).scrollTop();
+
+    $(".shop_car").click(function () {
+        $("#specification").fadeIn();
+        $(".cover").fadeIn();
+        $(window).scrollTop(0);
+    })
+    $(".spec").click(function () {
+        $("#specification").fadeIn();
+        $(".cover").fadeIn();
+        $(window).scrollTop(0);
+    })
+    $(".clo").click(function () {
+        $("#specification").hide();
+        $(".cover").hide();
+    })
+    })
+</script>

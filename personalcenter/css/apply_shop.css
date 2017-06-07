@@ -1,0 +1,21 @@
+p {
+    margin: 0;
+}
+.pd_15 {
+    padding: 10px 15px;
+}
+.commodity {
+    padding: 10px 15px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.commodity .content .title {
+    line-height: 25px;
+}
+ .commodity .content .introduction{
+     width: 100px;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     font-size: 13px;
+     color: #C1C1C1;
+ }

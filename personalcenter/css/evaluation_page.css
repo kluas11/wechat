@@ -1,0 +1,90 @@
+p{
+    margin: 0;
+}
+.evaluation_box{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.evaluation_box .info{
+    overflow: hidden;
+}
+.info .right p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.info .right{
+    line-height: 30px;
+}
+.info .right .eva .defalut{
+    display: inline-block;
+    background: url("../images/evaluation (2).png");
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+   position: relative;
+    top: 5px;
+}
+.text_box .content{
+    background-color: #f2f2f2;
+    color: #B1B1B1;
+    border: none;
+    resize: none;
+}
+.same{
+    overflow: hidden;
+    background-color: #f2f2f2;
+    text-align: center;
+    float: left;
+    margin-right: 5px;
+}
+.text_box .upload i{
+    background:url("../images/evaluation (3).png") no-repeat;
+    width: 30px;
+    height: 24px;
+    background-size: 28px;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.text_box .upload{
+    margin-left: 15px;
+    padding: 11px;
+
+}
+.text_box .pic{
+
+}
+.text_box{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.info .right .eva .active{
+    display: inline-block;
+    background: url("../images/evaluation (1).png") no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    position: relative;
+    top: 5px;
+}
+.text_box .pic2 img{
+    width: 70px;
+}
+.order_btn{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.order_btn .btm{
+    color: #FF7DA8;
+    border: 1px solid #FF7DA8;
+    background-color: #fff;
+    display: inline-block;
+    width: 60%;
+    border-radius: 25px;
+    height: 40px;
+    line-height: 40px;
+}
+

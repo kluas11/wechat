@@ -1,0 +1,57 @@
+
+.info1{
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 1px;
+}
+/*.info1 .name{*/
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+/*}*/
+.info1 .address{
+    color: #7D7D7D;
+}
+.info1 .modify{
+    background-color: #F7F7F7;
+    height: 50px;
+    border-radius: 10px;
+    line-height: 50px;
+    margin-top: 5px;
+}
+.info1 .right{
+    text-align: right;
+}
+.info1 .modify .right i{
+    background: url("../images/address.png") no-repeat;
+    background-size: 95px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.info1 .modify .left i{
+    background: url("../images/address.png") no-repeat;
+    background-size: 81px;
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background-position: -37px 0;
+    vertical-align: middle;
+}
+.info1 .modify .right .delect i{
+    background-position: -23px 0;
+}
+.list2 .modify .left i{
+    background-position: -60px 0px;
+}
+.new_address{
+    margin-top: 50px;
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #FF8CB1;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #FF8CB1;
+}

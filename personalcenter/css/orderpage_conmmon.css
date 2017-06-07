@@ -1,0 +1,53 @@
+.order_content{
+    margin-bottom: 10px;
+}
+.order_content .same{
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #F2F2F2;
+}
+.order_content .order_info p{
+    margin: 0;
+    color: #808080;
+}
+.order_content .pending{
+    line-height: 40px;
+    color: #FF6699;
+    text-align: right;
+
+}
+.order_content .shop_info p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.order_content .shop_info{
+    line-height: 25px;
+    position: relative;
+}
+.order_content .shop_info .cor{
+    color:#FF6699 ;
+}
+.order_content .shop_info .arrow{
+    display: inline-block;
+    background: url("../images/perarrow_03.png") no-repeat;
+    width: 9px;
+    height: 15px;
+    background-size: 9px;
+    position: absolute;
+    right: 0px;
+    top:30px;
+}
+.order_content .shop_info .num{
+    color: #CBCBCB;
+}
+.price_box .info, .order_content .price_box .price_btn{
+    text-align: right;
+}
+.price_box .info .num ,.order_content .price_box .info .price{
+    color: #FF7D99;
+}
+.order_content .price_box{
+    padding-bottom: 15px;
+}

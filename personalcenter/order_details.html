@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单详情</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--链接bootstrap样式表-->
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!--链接共同样式-->
+    <link rel="stylesheet" href="../css/common.css">
+    <!--链接内部样式表-->
+    <link rel="stylesheet" href="css/order_details.css">
+</head>
+<body>
+<div class="container-fluid">
+    <!--订单状态-->
+    <div class="row fitness bgw">
+      <div class="col-xs-12 same ">
+        <div class="col-xs-10 order_info pl0">
+            <p>订单状态: <span class="active">代付款</span></p>
+            <p>订单编号: <span>23456789</span></p>
+        </div>
+        <div class="col-xs-2 pending pr0 pl0">
+            <span class="payment">付款</span>
+        </div>
+    </div>
+    </div>
+    <!--个人信息-->
+    <div class="row bgw" id="personal_info">
+        <div class="col-xs-12  pl0 info1">
+            <span class="name">张三</span>
+            <span class="tel">13800138000</span>
+        </div>
+        <div class=" col-xs-12  pl0 info2">
+            <span class="address">广东 广州天河区 中山大道西191号南方医科大学附属三院</span>
+        </div>
+        <div class="car ">
+            <i></i>
+        </div>
+    </div>
+    <!--商品清单-->
+    <div class=" row info_title " style="margin-bottom: 1px">
+        <div class="col-xs-12 ">
+            <i class="image"></i>
+            <span>商品清单</span>
+        </div>
+    </div>
+    <!--清单内容-->
+    <div class="row product" style="margin-bottom: 1px">
+        <div class="col-xs-3  pl0 image">
+            <img src="images/tj1.png" alt="" class="pic">
+        </div>
+        <div class="col-xs-9 content pl0">
+            <p class="p1">韩都衣舍秋冬装新款女装长袖宽松版型什么什么什么 </p>
+            <div class="info">
+                <span class="number">x2</span>
+                <span>规格: </span>
+                <span>"白色"</span>
+                <span>"S"</span>
+            </div>
+            <p class="p2">￥<span>200.00</span></p>
+            <div class="arrow">
+                <i></i>
+            </div>
+        </div>
+    </div>
+    <div class="row product">
+        <div class="col-xs-3  pl0 image">
+            <img src="images/tj1.png" alt="" class="pic">
+        </div>
+        <div class="col-xs-9 content pl0">
+            <p class="p1">韩都衣舍秋冬装新款女装长袖宽松版型什么什么什么 </p>
+            <div class="info">
+                <span class="number">x2</span>
+                <span>规格: </span>
+                <span>"白色"</span>
+                <span>"S"</span>
+            </div>
+            <p class="p2">￥<span>200.00</span></p>
+            <div class="arrow">
+                <i></i>
+            </div>
+        </div>
+    </div>
+    <!--订单金额-->
+    <div class="row order_amount bgw">
+        <div class="box">
+        <div class="col-xs-8 title">
+            <i class="image"></i>
+            <span>订单金额</span>
+        </div>
+        <div class="col-xs-4 price">
+           <span>￥400.00</span>
+        </div>
+        </div>
+        <div class="content_box">
+        <div class="col-xs-6 left">
+            <ul class=" content">
+                <li>商品金额: ￥200.00</li>
+                <li>积分抵扣: ￥20.00</li>
+                <li>运费: ￥5.00</li>
+                <li>优惠卷: ￥20.00</li>
+            </ul>
+        </div>
+        <div class="col-xs-6 right">
+            <span>商品数量: 3件</span>
+        </div>
+        </div>
+    </div>
+    <!--取消订单-->
+    <div class="row cancel_order center-block">
+            <span class="content">取消订单</span>
+    </div>
+</div>
+</body>
+</html>
+<!--链接jquery-->
+<script src="../js/jquery-1.11.3/jquery.min.js"></script>
+<!--链接bootstrap JS文件-->
+<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>

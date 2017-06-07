@@ -1,0 +1,156 @@
+p{
+    margin: 0;
+}
+/*订单状态*/
+.fitness{
+    margin-bottom: 10px;
+}
+.fitness .same{
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #F2F2F2;
+}
+.fitness .pending{
+    line-height: 40px;
+}
+.fitness .pending .payment{
+    line-height: 30px;
+    color: #FF6699;
+    border-radius: 25px;
+    border: 1px solid  #FF6699;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+.fitness .order_info .active{
+    color: #FF6699;
+}
+/*个人信息*/
+#personal_info{
+    border: 6px solid transparent;
+    -webkit-border-image: url("../images/boreder1.png") 9 9 round;
+    -moz-border-image: url("../images/boreder1.png") 9 9 round;
+    -o-border-image: url("../images/boreder1.png") 9 9 round;
+    border-image: url("../images/boreder1.png") 9 9 round;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+#personal_info .info1 .tel{
+    margin-left: 10px;
+}
+#personal_info .car i{
+    background: url("../images/img4.png");
+    background-position: 60px 0;
+    background-size: 220px;
+    width: 60px;
+    height: 50px;
+    display: inline-block;
+}
+#personal_info .car{
+    position: absolute;
+    bottom: -3px;
+    right: 9px;
+}
+#personal_info .info2{
+    padding-top: 5px;
+    position: relative;
+    z-index: 1;
+}
+#personal_info .info2 .address{
+    color: #B9B9B9;
+}
+/*商品清单*/
+.info_title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+.product{
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+
+}
+.info_title .image{
+    display: inline-block;
+    background: url("../images/img4.png");
+    background-size: 190px;
+    width: 22px ;
+    height: 21px;
+    vertical-align: middle;
+}
+.info_title .image{
+    background-position: -17px 0;
+}
+.product .image{
+    padding-right: 5px;
+}
+.product .content .p1{
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.product .content .info{
+    margin-bottom: 5px;
+}
+.product .content .info span{
+    padding-right: 10px;
+    display: inline-block;
+    color: #C9C9C9;
+}
+.product .content .p2{
+    color: #FF93B5;
+}
+.product .content .arrow i{
+    background: url("../images/perarrow_03.png") no-repeat;
+    width: 10px;
+    height: 15px;
+    background-size: 8px;
+    display: block;
+    position: absolute;
+    bottom: 26px;
+    right: 0px;
+}
+.order_amount .title .image{
+    display: inline-block;
+    background: url("../images/img4.png");
+    background-size: 190px;
+    width: 22px ;
+    height: 21px;
+    vertical-align: middle;
+    background-position: -39px 0;
+}
+.order_amount .box{
+    line-height: 40px;
+    overflow: hidden;
+    border-bottom: 1px solid #f2f2f2;
+}
+.order_amount .price {
+    text-align: right;
+    color: #FF6A9C;
+}
+.order_amount .content_box{
+    overflow: hidden;
+    padding-top: 10px;
+    color:#959595 ;
+}
+.cancel_order{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.cancel_order .content{
+    width: 60%;
+    border-radius: 25px;
+    border:1px solid #C1C1C1;
+    color: #C1C1C1;
+    background-color: #fff;
+    display:inline-block;
+    height: 40px;
+    line-height: 40px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的分销</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--链接bootstrap样式表-->
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!--链接共同样式-->
+    <link rel="stylesheet" href="../css/common.css">
+    <!--链接内部样式表-->
+    <link rel="stylesheet" href="css/my_distribution.css">
+</head>
+<body>
+<div class="container-fluid ">
+    <!--现有金额-->
+    <div class="row d_amount">
+        <div class="col-xs-10 left">
+            <h5>现有金额(元)</h5>
+            <span class="num">8888.88</span>
+        </div>
+        <div class="col-xs-2 pl0 withdraw">
+            <span>提现</span>
+        </div>
+    </div>
+    <!--累计收益-->
+    <div class="row accumulated_income same bgw">
+        <div class="content">
+            <div class="col-xs-6 pl0 income ">
+               <div class="title">累计收益(元) &nbsp;&nbsp;<i></i></div>
+
+                <p class="num">￥8888<sub>.88</sub></p>
+            </div>
+            <div class="col-xs-6 transaction">
+                <div class="title">交易金额 (元)</div>
+                <p class="num">￥8888<sub>.88</sub></p>
+
+            </div>
+        </div>
+    </div>
+    <!--客户人数-->
+    <div class="row same client bgw">
+        <div class="content">
+            <div class="col-xs-6 pl0 income">
+                <div class="title">客户人数(人) &nbsp;&nbsp;<i></i></div>
+
+                <p class="num">88</p>
+            </div>
+            <div class="col-xs-6 transaction">
+                <div class="title">交易 (件)</div>
+                <p class="num">88</p>
+
+            </div>
+        </div>
+    </div>
+    <!--分销说明-->
+    <div class="row d_instructions bgw">
+        <div class="col-xs-12 content">
+            <span>分销说明</span>
+        </div>
+        <ul class="col-xs-12 list">
+           <li><a href="">如何分享产品？</a></li>
+            <li><a href="">如何体现?</a></li>
+            <li><a href="">佣金怎么赚钱?</a></li>
+            <li><a href="">更多</a></li>
+        </ul>
+    </div>
+    <!--底部分享-->
+    <div class="row share bgw">
+        <div class="col-xs-6">分享公众号</div>
+        <div class="col-xs-6 pl0">分享二维码</div>
+    </div>
+</div>
+</body>
+</html>
+<!--链接jquery-->
+<script src="../js/jquery-1.11.3/jquery.min.js"></script>
+<!--链接bootstrap JS文件-->
+<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>

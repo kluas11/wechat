@@ -1,0 +1,199 @@
+
+/*店铺头部*/
+#shop_header {
+    background: url("../images/shophome1.png");
+    background-size: 400px;
+    height: 90px;
+}
+#shop_header .header_box{
+    background-color: rgba(8,8,8,0.4);
+    width: 100%;
+    height: 100%;
+}
+/*店铺头部左边 卖家logo*/
+#shop_header .header_left{
+    margin-top: 15px;
+}
+#shop_header .header_left .seller_logo{
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+#shop_header .header_left .seller_name{
+    float: left;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+/*店铺头部右边*/
+#shop_header .header_right .att_title {
+    border: 2px solid #fff;
+    padding: 5px 20px;
+    color: #fff;
+    float: right;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 28px;
+}
+/*店铺导航*/
+#nav{
+    background-color: #fff;
+}
+#nav{
+    padding:10px 5px;
+}
+#nav .same{
+    text-align:center;
+    border-radius: 25px;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    display: inline-block;
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 3px;
+    padding-left: 4px;
+}
+
+#nav .active{
+    background-color: #fff;
+    color: #FF6699;
+    border-color: #FF6699;
+}
+
+/*店铺轮播图*/
+#lunbotu{
+    padding:15px;
+}
+/*优惠卷区域*/
+#coupon{
+    padding: 10px 5px;
+    background-color: #fff;
+}
+#coupon .same{
+    color: #fff ;
+    text-align: center;
+}
+#coupon .green{
+    background-color: #57C79C;
+
+}
+#coupon .pink{
+    background-color: #FF6699;
+
+}
+#coupon .blue{
+    background-color: #41C1F7;
+
+}
+/*商品列表*/
+.shop_list{
+    margin-top: 10px;
+}
+.list2  .content{
+    overflow: hidden;
+    position: relative;
+}
+
+.shop_list  .content .price{
+    color: #FF6699;
+}
+.shop_list .content .pd_r{
+    padding: 5px 5px 5px 0;
+}
+.shop_list .content .pd_l{
+    padding: 5px 0px 5px 5px;
+}
+
+.shop_list .p_d{
+    padding: 5px;
+    background-color: #fff;
+ }
+
+.list2 .fire i{
+    width: 22px;
+    height: 37px;
+    display: inline-block;
+    background: url("../images/img.png") no-repeat;
+    background-size: 200px;
+    background-position: 0px 0px;
+
+}
+.shop_list .fire{
+    padding: 10px 20px 6px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    bottom: 86px;
+    right: 20px;
+    box-shadow: 0 4px 20px 0 #9d9d9d ;
+    background-color: rgba(255,255,255,.8);
+}
+
+.list2{
+    margin-bottom: 80px;
+}
+/*页尾部*/
+#footer .content {
+    width: 100%;
+}
+#footer .same{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    height: 55px;
+}
+#footer .new_title{
+    background-color: #FD95B8;
+}
+#footer .contact{
+    background-color: #FF6699;
+    line-height: 65px;
+
+
+}
+#footer .car,#footer .my{
+    text-align: center;
+    margin-top: 10px;
+}
+#footer .car i{
+    display: inline-block;
+    width: 21px;
+    height:17px;
+    background: url("../images/img.png");
+    background-size: 143px;
+    background-position: 74px 0px;
+}
+#footer .my i{
+    display: inline-block;
+    width: 20px;
+    height:17px;
+    background: url("../images/img.png");
+    background-size: 140px;
+    background-position: 120px 0px;
+}
+#footer{
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#footer .content .down:before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 4px solid rgba(255,255,255,1);
+    position: absolute;
+    bottom: -4px;
+    left: 65px;
+}
+#footer .content .dropdown-menu{
+    text-align: center;
+}
+.car p ,.my p{
+    margin: 0;
+}

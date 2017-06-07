@@ -1,0 +1,11 @@
+.info{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.info .content{
+    color: #BDBDBD;
+    font-size: 13px;
+}
+body{
+    background-color: #fff;
+}

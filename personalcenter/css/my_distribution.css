@@ -1,0 +1,92 @@
+p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+/*现有金额*/
+.d_amount{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FB7575;
+}
+.d_amount .left{
+    color: #fff;
+}
+ .d_amount .left .num{
+     font-size: 35px;
+ }
+.d_amount .withdraw{
+    margin-top: 10px;
+}
+.d_amount .withdraw span{
+     background: #fff;
+     color: #FB7575;
+     border: 1px solid #FB7575;
+     border-radius: 3px;
+     width: 100%;
+     display: inline-block;
+     text-align: center;
+ }
+/*累计收益与客户人数*/
+.same{
+    padding: 15px;
+
+}
+.same .content{
+    overflow: hidden;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 15px;
+}
+.same .num{
+    font-size: 18px;
+    color: #FB7575;
+}
+.same .title{
+    line-height: 30px;
+ }
+.same .income .title i{
+    background: url('../images/perarrow_03.png') no-repeat;
+    background-size: 7px;
+    width: 7px;
+    height: 12px;
+    display: inline-block;
+}
+.client .content{
+    border-bottom: none;
+}
+.client{
+    margin-bottom: 10px;
+}
+/*分销说明*/
+/*.d_instructions{*/
+    /*padding-top: 10px;*/
+/*}*/
+.d_instructions .content{
+    line-height: 30px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.d_instructions .content span{
+    font-size: 16px;
+    font-weight: bold;
+}
+.d_instructions .list li{
+    line-height: 35px;
+}
+.d_instructions .list li a{
+    color: #818181;
+    border:none;
+    outline:none;
+}
+.d_instructions{
+    margin-bottom: 10px;
+}
+.share{
+    border-top: 1px solid #f2f2f2;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}

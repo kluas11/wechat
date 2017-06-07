@@ -1,0 +1,306 @@
+body{
+    background-color: #f2f2f2;
+}
+/*首页顶部 地址与搜索栏*/
+/*html{*/
+    /*font-size: 40px;*/
+/*}*/
+/*body{*/
+    /*background-color: #cccccc;*/
+/*}*/
+.header .h_row .h_left .address .icon{
+    width: 20px;
+    height:25px;
+    display:inline-block;
+    background:url("../images/addr.png") no-repeat;
+    background-size: 20px;
+   vertical-align:middle;
+}
+.header .h_row .h_left .address{
+    color: #FF6699;
+}
+.header .h_row .h_left{
+    margin-top: 15px;
+}
+
+.header{
+    height: 50px;
+}
+.header .h_row .h_left .search .icon_box{
+    height: 25px;
+    width: 25px;
+    border: 1px solid #FF6699;
+    background-color: #FF6699;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    display: block;
+    float:left;
+    text-align: center;
+
+}
+.header .h_row .h_left .search .icon_box .icon {
+    background: url("../images/s_icon.png") no-repeat;
+    width: 10px;
+    height: 12px;
+    display: inline-block;
+    background-size: 10px;
+    position: relative;
+    top: 4px;
+}
+.header .h_row .h_left .search input{
+  width: 82%;
+    border:1px solid #FF6699;
+    border-left: none;
+    height: 25px;
+    text-indent:10px;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px ;
+    outline: none;
+}
+.header .h_row .h_right{
+height: 25px;
+    margin-top: 15px;
+
+}
+.header .h_row{
+    padding-bottom: 10px;
+}
+.header .h_row .h_right .icon{
+    width: 20px;
+    height: 20px;
+    background: url("../images/mes.png") no-repeat;
+    background-size: 20px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+.recommend{
+    padding-top: 20px;
+}
+/*秒杀开始*/
+.spike .spike_find .icon{
+    width: 20px;
+    height: 21px;
+    display: inline-block;
+    background: url("../images/spike.png") no-repeat;
+    background-size: 20px;
+    position: relative;
+    top: 4px;
+
+}
+.spike  .spike_find .spike_tag{
+    color: #FF6699;
+    font-weight: 500;
+   font-size: 16px;
+}
+.spike  .time_b {
+    position: relative;
+    top: 6px;
+}
+.spike .time1,.spike .time2,.spike .time3{
+    padding: 2px;
+    background-color: #f2f2f2;
+}
+.spike  .spike_sales {
+    position: relative;
+}
+
+.spike  .sp_box{
+    height: 20px;
+    background-color:#FF6699 ;
+    color: #fff;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 25px;
+}
+    /*秒杀结束*/
+/*秒杀详情*/
+.spike_detail  .sp1{
+    width: 24%;
+}
+.spike_detail  .sp1 p{
+    text-align: center;
+}
+.spike_detail  .sp1 .price1{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+.spike_detail  .sp1 .price2{
+    text-decoration: line-through;
+    color: #BBBBBB;
+}
+.spike_detail  .sp1 .sp1_image{
+    position: relative;
+}
+.spike_detail  .sp1 .sp1_image .tag{
+    /*font-size:1.4rem;*/
+    /*width: 6rem;*/
+    /*height: 3rem;*/
+    /*line-height: 3rem;*/
+    text-align: center;
+    background-color: #FABA1A;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:25px;
+    color: #fff;
+   position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/*秒杀详情结束*/
+/*发现好店*/
+.find .find_box {
+    color:#FF6699;
+}
+.find .find_box .icon{
+    display: inline-block;
+    width: 38px;
+    height: 25px;
+    background: url("../images/img.png") no-repeat;
+    background-size: 212px;
+    background-position: -175px 0;
+    vertical-align: middle;
+}
+.find .find_box .find_tag{
+    font-size: 16px;
+    font-weight: 700;
+   letter-spacing: 6px;
+}
+.find  .find2 {
+    position: relative;
+}
+
+.find .find2 .fd{
+    height: 20px;
+    background-color:#FF6699 ;
+    color: #fff;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 25px;
+}
+/*发现结束*/
+.find_img  .fd_img{
+    width: 20%;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.find_img  .fd_img{
+    position: relative;
+}
+.find_img  .fd_name{
+    padding-top: 10px;
+}
+/*发现图片区域*/
+.find_img .tag{
+    /*font-size:1.4rem;*/
+    /*width: 6rem;*/
+    /*height: 3rem;*/
+    /*line-height: 3rem;*/
+    text-align: center;
+    background-color: #FABA1A;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:25px;
+    color: #fff;
+    position: absolute;
+    right: 5px;
+    bottom:30px;
+}
+/*猜你喜欢*/
+.like_title .line {
+    background-color: #D3D3D3;
+    position: relative;
+    top: 8px;
+    width: 37%;
+}
+
+.like_title .content{
+    text-align: center ;
+    color: #D3D3D3;
+
+}
+/*喜欢列表*/
+.like_list  .content{
+    position: relative;
+}
+
+.like_list  .content .price{
+    color: #FF6699;
+}
+.like_list .fire{
+  padding: 10px 20px 6px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    bottom: 86px;
+    right: 12px;
+    box-shadow: 0 4px 20px 0 #9d9d9d ;
+    background-color: #fff;
+}
+.like_list .content .pd_r{
+    padding: 5px 5px 5px 0;
+}
+.like_list .content .pd_l{
+    padding: 5px 0px 5px 5px;
+
+}
+.like_list .fire i{
+    width: 22px;
+    height: 37px;
+    display: inline-block;
+    background: url("../images/img.png") no-repeat;
+    background-size: 200px;
+    background-position: 0px 0px;
+}
+/*页脚*/
+.footer_info {
+    text-align: center;
+}
+.footer_info  .mr_t i{
+    display: inline-block;
+    width: 30px;
+    height:24px;
+    background: url("../images/img.png");
+    background-size: 150px;
+
+}
+.footer_info .info1 i{
+    background-position: 54px 0px;
+}
+.footer_info .active{
+    color: #FF6699;
+}
+.footer_info .info2 i{
+    background-position: 109px 3px;
+}
+.footer_info .info3 i{
+    background-position: 82px 5px;
+}
+.footer_info .info4 i{
+    background-position: 133px 4px;
+    width: 27px;
+}
+.footer_info{
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:#fff;
+}
+
+.pd0{
+    padding: 0;
+}
+.pd_b{
+    padding-bottom: 10px;
+}
+.p_d{
+    padding: 5px;
+}
+.bg_w{
+    background-color: #fff;
+}

@@ -1,0 +1,21 @@
+p{
+    margin: 0;
+}
+.nav{
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+.nav .content .title{
+    text-align: center;
+    line-height: 30px;
+    border-bottom: 1px solid #fff;
+}
+.nav .content .active{
+    color: #FF87AD;
+    border-bottom-color: #FF6F9E;
+}
+.no_order{
+    margin-top: 100px;
+    text-align: center;
+}

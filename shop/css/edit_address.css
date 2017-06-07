@@ -1,0 +1,22 @@
+#footer{
+    margin-top:60px;
+    text-align: center;
+}
+#footer .delete, #footer .save{
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid red;
+    border-radius: 20px;
+    display: inline-block;
+    width: 100%;
+}
+#footer .delete{
+    background-color: #CCCCCC;
+    color: #fff;
+    border-color: #CCCCCC;
+}
+#footer .save{
+    background-color: #fff;
+    color: #FF699B;
+    border-color: #FF699B;
+}
