@@ -261,7 +261,8 @@ height: 25px;
     text-align: center;
 }
 .footer_info  .mr_t i{
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     width: 30px;
     height:24px;
     background: url("../images/img.png");
@@ -290,6 +291,15 @@ height: 25px;
     bottom: 0;
     width: 100%;
     background-color:#fff;
+}
+.footer_info a{
+    color: #000;
+    margin-top: 3px;
+    display: inline-block;
+}
+a:hover{
+    outline: none;
+    text-decoration: none;
 }
 
 .pd0{

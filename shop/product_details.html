@@ -119,9 +119,9 @@
                 <img src="images/deatil3.png" alt="" class="pic">
             </div>
             <div class="col-xs-6 pr0 info">
-                <div class=" price">￥<span>178.0</span></div>
+                <div class=" price">￥<span>178.00</span></div>
                 <div> 库存<span>88</span>件</div>
-                <div >已选&nbsp;&nbsp;<span>"白色"&nbsp;&nbsp;"S"</span></div>
+                <div >已选&nbsp;&nbsp;<span class="color">"白色"</span>&nbsp;&nbsp;"<span class="size">S</span>"</div>
             </div>
             <div class="col-xs-2 clo pr0 pl0">
                 <i></i>
@@ -172,6 +172,33 @@
 <!--链接swiper js文件-->
 <script src="../bower_components/swiper/dist/js/swiper.min.js"></script>
 <script>
+//    <!--规格颜色的选择-->
+    $('#specification .color .content span').click(function () {
+        $(this).addClass('active').siblings('span').removeClass('active');
+        var cor=$(this).text()
+        $('#header .info .color').text(cor);
+    })
+//尺码的选择
+$('#specification .size .content span').click(function () {
+    $(this).addClass('active').siblings('span').removeClass('active');
+    var size=$(this).text();
+    $('#header .info .size').text(size);
+})
+//购买数量
+var jia=$('#specification .number .right .shu').text();
+$('#specification .number .right .jia').click(function () {
+   jia++;
+    $('#specification .number .right .shu').text(jia);
+//    console.log(typeof jia);
+})
+//减
+$('#specification .number .right .jian').click(function () {
+    if(jia>0) {
+        jia--;
+        $('#specification .number .right .shu').text(jia);
+    }
+//    console.log(typeof jia);
+})
     var mySwiper= new Swiper('.swiper-container',{
         autoplay:2000,
         loop:true,
@@ -185,22 +212,44 @@
 //        // 如果需要滚动条
 //        scrollbar: '.swiper-scrollbar',
     });
-    $(window).scroll(function () {
-        var top=$(window).scrollTop();
+//    购物车点击
+//取消滑动默认事件
+function tm(event) {
+    event.preventDefault();
+}
 
     $(".shop_car").click(function () {
+        var flag=1;
+        if (flag == 1){//遮罩层
+//            pc防止滑动
+            document.body.style.overflow='hidden';
+            document.body.style.height='100%';
+//            侦听手机滑动触发时间 防止手机滑动
+            document.addEventListener('touchmove', tm(event),false)
+
+        }
         $("#specification").fadeIn();
         $(".cover").fadeIn();
         $(window).scrollTop(0);
+
     })
+//
     $(".spec").click(function () {
         $("#specification").fadeIn();
         $(".cover").fadeIn();
-        $(window).scrollTop(0);
+//        $(window).scrollTop(0);
     })
+//    关闭按钮
     $(".clo").click(function () {
+//            pc防止滑动
+            document.body.style.overflow='';
+            document.body.style.height='';
+//            移除侦听事件
+        document.removeEventListener('touchmove', tm(event),false)
+
+
         $("#specification").hide();
         $(".cover").hide();
     })
-    })
+
 </script>

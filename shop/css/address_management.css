@@ -53,5 +53,7 @@
     text-align: center;
     border-radius: 20px;
     background-color: #fff;
+}
+.new_address a{
     color: #FF8CB1;
 }

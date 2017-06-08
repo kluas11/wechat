@@ -6,23 +6,24 @@
     background-color: #FF689B;
     height: 122px;
     position: relative;
+    overflow: hidden;
 
 }
-.coupon1 .content .left{
+.coupon1  .left{
     background:url("../images/coupon1_03.png") repeat-y;
     height: 122px;
     width: 10px;
     position: absolute;
-    left: -9px;
+    left: 10px;
     display: inline-block;
     background-size: 10px;
 }
-.coupon1 .content .right{
+.coupon1 .right{
     background:url("../images/coupon2_05.png") repeat-y;
     height: 122px;
     width: 12px;
     position: absolute;
-    right: -11px;
+    right: 9px;
     display: inline-block;
     background-size: 12px;
 
@@ -43,4 +44,19 @@ color: rgba(255,255,255,0.2);
     position: absolute;
     left: -35px;
     top: -15px;
+}
+.coupon1 .title{
+    color: #fff;
+    margin-left: 60px;
+}
+.coupon1 .title .icon{
+    font-size: 42px;
+}
+.coupon1 .title .num{
+    font-size: 70px;
+    font-weight: bold;
+}
+.coupon1 .title .term{
+    position: absolute;
+    bottom: 3px;
 }

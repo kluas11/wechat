@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>订单详情</title>
+    <title>订单详情(待评价)</title>
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!--链接bootstrap样式表-->
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="css/orderDetail_common.css">
     <!--链接内部样式表-->
-    <link rel="stylesheet" href="css/orderDetail_received.css">
+    <link rel="stylesheet" href="css/orderdetail_evaluation.css">
 </head>
 <body>
 <div class="container-fluid">
@@ -19,11 +19,11 @@
     <div class="row fitness bgw">
         <div class="col-xs-12 same ">
             <div class="col-xs-8 order_info pl0">
-                <p>订单状态: <span class="active">代收货</span></p>
+                <p>订单状态: <span class="active">待评价</span></p>
                 <p>订单编号: <span>23456789</span></p>
             </div>
             <div class="col-xs-4 pending pr0 pl0">
-                <span class="payment">确认收货</span>
+                <a href="http://deng10.duapp.com/hz/personalcenter/evaluation_page.html"><span class="payment">评价</span></a>
             </div>
         </div>
     </div>
@@ -120,10 +120,7 @@
             </div>
         </div>
     </div>
-    <!--取消订单-->
-    <div class="row cancel_order center-block">
-        <a href="http://deng10.duapp.com/hz/personalcenter/appsale_description.html" class="content">申请售后</a>
-    </div>
+
 </div>
 
 </body>

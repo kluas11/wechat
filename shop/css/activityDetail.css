@@ -166,6 +166,7 @@
 }
 .footer_info{
     z-index: 3;
+    margin-top: 0px;
 }
 .cover{
     width: 100%;

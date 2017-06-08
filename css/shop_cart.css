@@ -24,3 +24,16 @@
     background-size: 130px;
     background-position:-65px 4px;
 }
+.footer_info i{
+    display: block;
+    margin: 0 auto;
+}
+.footer_info a{
+    color: #000;
+    margin-top: 3px;
+    display: inline-block;
+}
+a:hover{
+    outline: none;
+    text-decoration: none;
+}

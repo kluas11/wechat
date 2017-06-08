@@ -47,6 +47,9 @@
     display: block;
     text-align: center;
 }
+.attention .content .list a {
+    overflow: hidden;
+}
 .attention .content .list .title{
     color: #AAAAAA;
 }
@@ -199,4 +202,17 @@
     background-size: 130px;
     background-position: 0px 4px;
     width: 21px;
+}
+.footer_info i{
+    display: block;
+    margin: 0 auto;
+}
+.footer_info a{
+    color: #000;
+    margin-top: 3px;
+    display: inline-block;
+}
+a:hover{
+    outline: none;
+    text-decoration: none;
 }
