@@ -20,14 +20,10 @@
     display: block;
 }
 .footer_info .info1 i{
-    background: url("../images/img2.png");
-    background-size: 130px;
-    background-position:30px 0px;
+    background-position:-122px 0px;
 }
 .footer_info .info2 i{
-    background: url("../images/img2.png");
-    background-size: 134px;
-    background-position:-30px 2px;
+    background-position:-34px -36px;
 }
 .footer_info i{
     display: block;
@@ -41,4 +37,7 @@
 a:hover{
     outline: none;
     text-decoration: none;
+}
+.footer_info{
+    margin-top: 0px;
 }

@@ -1,3 +1,6 @@
+body a{
+    color: #000;
+}
 /*顶部个人信息栏*/
 #header{
     background: url("../images/personal (11).png");
@@ -42,6 +45,7 @@
 /*关注列表*/
 .attention .content{
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 .attention .content .list span{
     display: block;
@@ -193,15 +197,12 @@
     margin-bottom: 80px;
 }
 .footer_info .info1 i{
-    background: url("../images/img3.png");
-    background-size: 130px;
-    background-position:30px 0px;
+
+    background-position:-122px 0px;
 }
 .footer_info .info4 i{
-    background: url(../images/img3.png);
-    background-size: 130px;
-    background-position: 0px 4px;
-    width: 21px;
+
+    background-position: 5px -38px;
 }
 .footer_info i{
     display: block;

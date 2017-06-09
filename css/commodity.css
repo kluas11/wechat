@@ -3,13 +3,13 @@
 
 }
 .shop_list .check i{
-    background: url("../images/address.png");
+    background: url("../images/address.png") no-repeat;
     background-size: 75px;
-    width: 18px;
+    width: 20px;
     height: 18px;
     display: inline-block;
     float: left;
-    background-position: 40px 0;
+    background-position: -34px 0;
     position:absolute;
     top: 32px;
 }
@@ -31,6 +31,9 @@
     border:1px solid #FF6699;
     border-radius: 14px;
 
+}
+.shop_list .content .number .jian{
+    padding: 4px 10px;
 }
 .shop_list .content .number{
     height: 30px;
@@ -55,24 +58,23 @@
     display: inline-block;
 }
 .list2 .check i{
-    background-position: 18px 0;
-    height: 17px;
+    background-position: -57px 0;
 }
 .settlement{
     height: 40px;
     line-height: 40px;
     position: fixed;
-    bottom: 71px;
+    bottom: 67px;
     width: 100%;
 }
 .settlement .left .select i{
-    background: url("../images/address.png");
+    background: url("../images/address.png") no-repeat;
     background-size: 75px;
-    width: 18px;
+    width: 20px;
     height: 18px;
     display: inline-block;
     float: left;
-    background-position: 18px 0px;
+    background-position: -57px 0px;
     position: relative;
     top:10px;
 }
@@ -101,12 +103,11 @@
     top: 15px;
 }
 .footer_info .info1 i{
-    background: url("../images/img2.png");
-    background-size: 130px;
-    background-position:30px 0px;
+    background-position:-122px 0px;
 }
 .footer_info .info3 i{
-    background: url("../images/img2.png");
-    background-size: 130px;
-    background-position:-65px 4px;
+    background-position:-80px -35px;
+}
+p{
+    margin: 0;
 }

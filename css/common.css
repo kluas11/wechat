@@ -29,53 +29,43 @@ width: 100%;
     list-style: none;
 }
 /*页脚*/
-.footer_info {
+.footer_info{
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:#fff;
     text-align: center;
+    padding-bottom: 10px;
 }
-.footer_info  i{
+.footer_info   i{
     display: block;
-    width: 30px;
     margin: 0 auto;
-    height:24px;
-    background: url("../images/img.png");
+    width: 30px;
+    height:28px;
+    background: url("../images/img6.png") no-repeat;
     background-size: 150px;
-
 }
 .footer_info .info1 i{
-    background-position: 54px 0px;
-}
-.footer_info .active{
-    color: #FF6699;
+    background-position: -122px -37px;
 }
 .footer_info .info2 i{
-    background-position: 109px 3px;
+    background-position: -34px 2px;
 }
 .footer_info .info3 i{
-    background-position: 82px 5px;
+    background-position: -82px 5px;
 }
 .footer_info .info4 i{
-    background-position: 133px 4px;
-    width: 27px;
-}
-.footer_info{
-    margin-top: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color:#fff;
+    background-position: 5px 4px;
 }
 
-.footer_info{
-    margin-top: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color:#fff;
-}
 .footer_info a{
     color: #000;
     margin-top: 3px;
     display: inline-block;
+}
+.footer_info .active{
+    color: #FF6699;
 }
 a:hover{
     outline: none;

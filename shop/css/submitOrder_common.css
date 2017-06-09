@@ -49,7 +49,7 @@
     display: inline-block;
     width: 22px ;
     height: 20px;
-    background: url("../images/img3.png");
+    background: url("../images/img3.png") no-repeat;
     background-size: 180px;
     background-position: -57px 0;
     vertical-align: middle;

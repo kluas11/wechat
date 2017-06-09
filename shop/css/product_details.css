@@ -134,7 +134,6 @@
     background-size: 79px;
     display: inline-block;
     background-position: -30px 0px;
-    /*margin-left: 30%;*/
     vertical-align: bottom;
 
 }
@@ -169,7 +168,7 @@
     background-size: 70px;
     display: block;
     background-position: -47px 0px;
-    margin-left: 30%;
+   margin: 0 auto;
 }
 .footer .check{
     width: 22%;

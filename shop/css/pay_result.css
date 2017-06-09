@@ -31,3 +31,17 @@ body{
     text-align: center;
 
 }
+.go{
+    text-align: center;
+    margin-top: 40px;
+}
+.go a{
+    display: inline-block;
+    color: #FE7BA7;
+    background-color: #fff;
+    width: 70%;
+    border: 1px solid #FE7BA7;
+    border-radius: 25px;
+    height: 40px;
+    line-height: 40px;
+}

@@ -16,8 +16,8 @@ p {
   padding-bottom: 15px;
 }
 .shop .check i {
-  background: url("../images/apply.png");
-  background-position: 47px 0px;
+  background: url("../images/apply.png") no-repeat;
+  background-position: -41px 0px;
   width: 22px;
   height: 20px;
   background-size: 88px;
@@ -40,8 +40,8 @@ p {
   line-height: 25px;
 }
 .list2 .check i {
-  background: url("../images/apply.png");
-  background-position: 22px 0px;
+  background: url("../images/apply.png") no-repeat;
+  background-position: -67px 0px;
   width: 22px;
   height: 20px;
   background-size: 88px;
