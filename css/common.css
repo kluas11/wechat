@@ -20,7 +20,7 @@ body{
 width: 100%;
 }
 .mr_b{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .mr_t{
     margin-top: 10px;
@@ -33,8 +33,9 @@ width: 100%;
     text-align: center;
 }
 .footer_info  i{
-    display: inline-block;
+    display: block;
     width: 30px;
+    margin: 0 auto;
     height:24px;
     background: url("../images/img.png");
     background-size: 150px;
@@ -63,10 +64,19 @@ width: 100%;
     width: 100%;
     background-color:#fff;
 }
-a{
-    color: #000;
-}
 
+.footer_info{
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:#fff;
+}
+.footer_info a{
+    color: #000;
+    margin-top: 3px;
+    display: inline-block;
+}
 a:hover{
     outline: none;
     text-decoration: none;

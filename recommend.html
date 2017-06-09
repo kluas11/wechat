@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>达人推荐</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--链接bootstrao样式表-->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!--链接共同样式-->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index_common.css">
+    <!--链接swiper样式表-->
+    <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css">
+    <!--链接内部样式表-->
+    <link rel="stylesheet" href="css/recommend.css">
+</head>
+<body>
+<div class="container-fluid">
+    <!--轮播图-->
+    <div class="row lunbo mr_b bg_w">
+        <div class="col-xs-12 pr0 pl0">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/lunbo1.png" alt="" class="pic"></div>
+                    <div class="swiper-slide"><img src="images/lunbo1.png" alt="" class="pic"></div>
+                    <div class="swiper-slide"><img src="images/lunbo1.png" alt="" class="pic"></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+
+                <!--&lt;!&ndash; 如果需要导航按钮 &ndash;&gt;-->
+                <!--<div class="swiper-button-prev"></div>-->
+                <!--<div class="swiper-button-next"></div>-->
+
+                <!--&lt;!&ndash; 如果需要滚动条 &ndash;&gt;-->
+                <!--<div class="swiper-scrollbar"></div>-->
+            </div>
+        </div>
+    </div>
+    <!--喜欢列表-->
+    <div class="row like_list mr_b">
+        <div class=" content ">
+            <div class="col-xs-12 ">
+                <div class="col-xs-6 like_list1 pd_r">
+                    <div class="p_d bg_w">
+                        <img src="images/like.png" alt="" class="pic">
+                        <p>D韩版半高领防貂绒保暖内衣esire</p>
+                        <p class="price">￥ <span>39.00</span></p>
+                    </div>
+                </div>
+                <div class="col-xs-6 like_list1 pd_l">
+                    <div class="p_d bg_w">
+                        <img src="images/like.png" alt="" class="pic">
+                        <p>D韩版半高领防貂绒保暖内衣esire</p>
+                        <p class="price">￥ <span>39.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--喜欢列表2-->
+    <div class="row like_list mr_b">
+        <div class=" content ">
+            <div class="col-xs-12 ">
+                <div class="col-xs-6  like_list1 pd_r">
+                    <div class="p_d bg_w">
+                        <img src="images/like.png" alt="" class="pic">
+                        <p>D韩版半高领防貂绒保暖内衣esire</p>
+                        <p class="price">￥ <span>39.00</span></p>
+                    </div>
+                </div>
+                <div class="col-xs-6 like_list1 pd_l">
+                    <div class="p_d bg_w">
+                        <img src="images/like.png" alt="" class="pic">
+                        <p>D韩版半高领防貂绒保暖内衣esire</p>
+                        <p class="price">￥ <span>39.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--喜欢列表三 加上火箭-->
+    <div class="row like_list " style="margin-bottom: 70px">
+        <div class="content">
+            <div class="col-xs-12 ">
+                <div class="col-xs-6  pd_r">
+                    <div class="p_d bg_w">
+                        <img src="images/like.png" alt="" class="pic">
+                        <p>D韩版半高领防貂绒保暖内衣esire</p>
+                        <p class="price">￥ <span>39.00</span></p>
+                    </div>
+                </div>
+                <div class="col-xs-6  pd_l">
+                    <div class="p_d bg_w">
+                        <img src="images/like.png" alt="" class="pic">
+                        <p>D韩版半高领防貂绒保暖内衣esire</p>
+                        <p class="price">￥ <span>39.00</span></p>
+                    </div>
+                    <!--火箭-->
+                    <div class="fire"><i></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="row footer_info bg_w">
+        <div class="col-xs-3 info1 mr_t">
+            <i></i>
+            <a href="http://deng10.duapp.com/hz/index.html" class="active">首页</a></div>
+        <div class="col-xs-3 info2 mr_t"><i></i>
+            <a href="http://deng10.duapp.com/hz/classification.html">分类</a></div>
+        <div class="col-xs-3 info3 mr_t"><i></i>
+            <a href="http://deng10.duapp.com/hz/shop_cart.html">购物车</a></div>
+        <div class="col-xs-3 info4 mr_t"><i></i>
+            <a href="http://deng10.duapp.com/hz/personalcenter/personal_page.html">我</a></div>
+    </div>
+</div>
+</body>
+</html>
+<!--链接jquery-->
+<script src="js/jquery-1.11.3/jquery.min.js"></script>
+<!--链接bootstrap JS文件-->
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<!--链接swiper JS文件-->
+<script src="bower_components/swiper/dist/js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+        paginationClickable :true,
+//        自动播放
+        autoplay : 3000,
+//        点击图片后不停止自动播放
+        autoplayDisableOnInteraction : false,
+        paginationHide :true,
+        // 如果需要前进后退按钮
+//        nextButton: '.swiper-button-next',
+//        prevButton: '.swiper-button-prev',
+        direction: 'horizontal'
+    })
+
+
+</script>

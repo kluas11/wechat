@@ -15,21 +15,17 @@
     background-color: #F7F7F7;
     border-radius: 5px;
 }
-.option .content .unit i, .option .content .personal i{
+.option .content .same i{
     background: url("../images/address.png") no-repeat;
     display: inline-block;
     background-size: 81px;
     width: 22px;
     height: 22px;
+    background-position: -59px 0px;
     vertical-align: middle;
-
-
 }
-.option .content .unit i{
-    background-position: -37px 0px;
-}
-.option .content .personal i{
-    background-position:-59px 0px ;
+.option .content .same .active{
+    background-position:-37px 0px ;
 }
 .option .content .company{
     width: 64%;
@@ -39,4 +35,23 @@
     outline: none;
     /*text-indent: 1em;*/
     text-align: center;
+}
+.sbmit{
+    margin-top: 30px;
+    text-align: center;
+}
+.sbmit button{
+
+    border: 1px solid #CCCCCC;
+    border-radius: 25px;
+    height: 40px;
+    line-height: 40px;
+
+}
+.sbmit .save {
+
+    color: #FE7BA7;
+    background-color: #fff;
+    border-color: #FE7BA7;
+    width: 70%;
 }

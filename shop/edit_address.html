@@ -2,48 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>编辑地址</title>
+    <title>修改地址</title>
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!--链接bootstrap样式表-->
     <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <!--链接共同样式-->
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="css/address.commons.css">
     <!--链接内部样式表-->
     <link rel="stylesheet" href="./css/edit_address.css">
 </head>
 <body>
 <div class="container-fluid">
-    <div class="row same name">
-        <div class="col-xs-12">
-            <span>请填写收货人姓名</span>
-        </div>
-    </div>
+    <form action="" class="row address_info ">
+        <input type="text" placeholder="请填写收货人姓名"   class="col-xs-12 bgw name">
     <!--电话-->
-    <div class="row same tel">
-        <div class="col-xs-12">
-            <span>请填写手机号码</span>
-        </div>
-    </div>
+        <input type="text" placeholder="请填写手机号码" class="col-xs-12 bgw tel">
     <!--区-->
-    <div class="row same address ">
-        <div class="col-xs-12">
+        <div class="col-xs-12 address">
             <span>省、市、区</span>
             <i class="arrow"></i>
         </div>
-    </div>
     <!--详细地址-->
-    <div class="row same  detailed">
-        <div class="col-xs-12">
-            <span>请填写详细地址</span>
-        </div>
-    </div>
+        <input type="text" placeholder="请填写详细地址" class="col-xs-12 bgw spec">
     <!--删除与保存-->
-    <div class="row " id="footer">
-        <div class="col-xs-6"><span class="delete">删除该地址</span></div>
-        <div class="col-xs-6"><span class="save">保存</span></div>
+    <div class="col-xs-12 " id="footer">
+        <button type="reset" class="delect col-xs-5">删除该地址</button>
+        <button type="submit" class="save col-xs-5">保存</button>
     </div>
+    </form>
 </div>
 </body>
 </html>
@@ -51,3 +38,25 @@
 <script src="../js/jquery-1.11.3/jquery.min.js"></script>
 <!--链接bootstrap JS文件-->
 <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script>
+
+    function fouspd(obj) {
+        obj.focus(function () {
+            this.placeholder='';
+        })
+    }
+    fouspd($('.name'));
+    fouspd($('.tel'));
+    fouspd($('.spec'));
+    $('.name').blur(function () {
+        this.placeholder='请填写收货人姓名';
+    })
+    $('.tel').blur(function () {
+
+        this.placeholder='请填写手机号码'
+    })
+    $('.spec').blur(function () {
+        this.placeholder='请填写详细地址'
+    })
+
+</script>

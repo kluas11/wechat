@@ -1,22 +1,46 @@
-#footer{
-    margin-top:60px;
-    text-align: center;
+
+
+.address_info input{
+    outline: none;
+    border: none;
+    background-color: #fff;
+    line-height: 40px;
 }
-#footer .delete, #footer .save{
+.address .arrow{
+    display: inline-block;
+    background: url("../images/left_arrow.png") no-repeat;
+    width: 8px;
+    height: 15px;
+    background-size: 8px;
+    float: right;
+    vertical-align: middle;
+    position: relative;
+    right: 0px;
+    bottom: -12px;
+}
+.address{
+    line-height: 40px;
+    background-color: #fff;
+}
+#footer{
+    margin-top: 30px;
+}
+#footer button{
+
+    border: 1px solid #CCCCCC;
+    border-radius: 25px;
     height: 40px;
     line-height: 40px;
-    border: 1px solid red;
-    border-radius: 20px;
-    display: inline-block;
-    width: 100%;
+
 }
-#footer .delete{
-    background-color: #CCCCCC;
+#footer .delect{
     color: #fff;
-    border-color: #CCCCCC;
+    background-color: #ccc;
+    margin-right: 20px;
 }
 #footer .save{
+    color: #FE7BA7;
     background-color: #fff;
-    color: #FF699B;
-    border-color: #FF699B;
+    border-color: #FE7BA7;
+    margin-left: 20px;
 }

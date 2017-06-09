@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <!--链接共同样式-->
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="css/address.commons.css">
     <!--链接内部样式表-->
     <link rel="stylesheet" href="./css/invoice_info.css">
 </head>
@@ -19,12 +18,12 @@
         <div class=" col-xs-12 title">发票类型</div>
         <div class=" col-xs-12 option">
             <div class="content">
-                <div class="  col-xs-4 unit">
-                    <i></i>
+                <div class="  col-xs-4 unit same">
+                    <i class="active"></i>
                     <span>单位</span>
                 </div>
-                <div class="col-xs-8 personal">
-                    <i></i>
+                <div class="col-xs-8 personal same">
+                    <i class=" "></i>
                     <span>个人</span>
                 </div>
             </div>
@@ -32,14 +31,14 @@
 
     </div>
     <div class="row bgw allsame invoice" >
-        <div class=" col-xs-12 title">发票类型</div>
+        <div class=" col-xs-12 title">发票抬头</div>
         <div class=" col-xs-12 option">
             <div class="content">
-                <div class="  col-xs-4 unit">
-                    <i></i>
+                <div class="  col-xs-4 unit same">
+                    <i class="active"></i>
                     <span>单位</span>
                 </div>
-                <div class="col-xs-8 personal">
+                <div class="col-xs-8 personal same">
                     <i></i>
                     <span>个人</span>
                     <input type="text" class="company bgw" placeholder="请填写公司名称">
@@ -50,7 +49,7 @@
     </div>
     <!--保存-->
     <div class="row sbmit center-block">
-        <input type="submit" class="save" value="保存"/>
+        <button type="submit" class="save" >保存</button>
     </div>
 </div>
 </body>
@@ -59,3 +58,9 @@
 <script src="../js/jquery-1.11.3/jquery.min.js"></script>
 <!--链接bootstrao JS文件-->
 <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script>
+    $('.content .same i').click(function () {
+       $(this).addClass('active').parent().siblings().children(":first").removeClass('active');
+    })
+
+</script>

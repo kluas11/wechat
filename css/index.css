@@ -125,7 +125,7 @@ height: 25px;
     margin-top: 10px;
     font-size: 14px;
     font-weight: 700;
-
+    margin-bottom: 0;
 }
 .spike_detail  .sp1 .price2{
     text-decoration: line-through;
@@ -224,10 +224,14 @@ height: 25px;
 /*喜欢列表*/
 .like_list  .content{
     position: relative;
+    overflow: hidden;
 }
 
 .like_list  .content .price{
     color: #FF6699;
+}
+.like_list a{
+    color: #000;
 }
 .like_list .fire{
   padding: 10px 20px 6px;
@@ -313,4 +317,7 @@ a:hover{
 }
 .bg_w{
     background-color: #fff;
+}
+body a{
+    color: #000;
 }
