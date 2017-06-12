@@ -49,3 +49,8 @@
 <script src="../js/jquery-1.11.3/jquery.min.js"></script>
 <!--链接bootstrap JS文件-->
 <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script>
+    $('.delect span').click(function () {
+        $(this).parentsUntil('.container-fluid').hide();
+    })
+</script>

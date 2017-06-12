@@ -17,7 +17,7 @@ p {
 }
 .shop .check i {
   background: url("../images/apply.png") no-repeat;
-  background-position: -41px 0px;
+  background-position: -67px 0px;
   width: 22px;
   height: 20px;
   background-size: 88px;
@@ -39,9 +39,9 @@ p {
   color: #FF6699;
   line-height: 25px;
 }
-.list2 .check i {
+.shop .check .active {
   background: url("../images/apply.png") no-repeat;
-  background-position: -67px 0px;
+  background-position: -42px 0px;
   width: 22px;
   height: 20px;
   background-size: 88px;

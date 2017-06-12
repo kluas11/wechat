@@ -16,16 +16,17 @@
     <!--类型-->
     <div class="row types ">
         <div class="col-xs-12 content">
-        <span>类型：</span>
-        <div class="btn-group down">
-            <span>退货退款</span>
-            <span class="down_arrow" data-toggle="dropdown"><i></i></span>
-            <ul class="dropdown-menu down_content">
-                <li><a href="">退货退款</a></li>
-                <li><a href="">退货退款</a></li>
-                <li><a href="">退货退款</a></li>
-            </ul>
+        <span class="lei">类型：</span>
+        <div class=" down">
+            <span class="return">退货退款</span>
+            <span class="down_arrow" ><i></i></span>
+
         </div>
+            <ul class=" down_content">
+                <li ><a href="javascript:void(0)">1</a></li>
+                <li><a href="javascript:void(0)">2</a></li>
+                <li><a href="javascript:void(0)">3</a></li>
+            </ul>
         </div>
     </div>
     <!--文本框-->
@@ -52,3 +53,13 @@
 <!--链接bootstrap JS文件-->
 <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="../bower_components/less/dist/less.min.js"></script>
+<script>
+    $('.down_arrow').click(function () {
+        $('.down_content').toggle();
+    })
+  $('.down_content li').click(function () {
+      var li=$(this).text();
+      $('.return').text(li);
+      $('.down_content ').hide();
+  })
+</script>

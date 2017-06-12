@@ -9,7 +9,7 @@
     height: 18px;
     display: inline-block;
     float: left;
-    background-position: -34px 0;
+    background-position: -57px 0;
     position:absolute;
     top: 32px;
 }
@@ -23,7 +23,7 @@
     height: 25px;
     line-height: 25px;
 }
-.shop_list .content .price{
+.shop_list .content .p2{
     color: #FF6699;
 }
 .shop_list .content .number .jia, .shop_list .content .number .jian{
@@ -41,8 +41,13 @@
     position: relative;
 }
 .shop_list .content .number .num{
-    padding: 5px 15px;
+    width: 30px;
+    height: 30px;
     background-color: #F7F7F7;
+    outline: none;
+    border: none;
+    text-align: center;
+    line-height: 30px;
 }
 .shop_list .delect{
     position: absolute;
@@ -57,15 +62,16 @@
     height: 12px;
     display: inline-block;
 }
-.list2 .check i{
-    background-position: -57px 0;
+.shop_list .check .active{
+    background-position: -34px 0;
 }
 .settlement{
     height: 40px;
     line-height: 40px;
     position: fixed;
-    bottom: 67px;
+    bottom: 72px;
     width: 100%;
+    padding-bottom: 40px;
 }
 .settlement .left .select i{
     background: url("../images/address.png") no-repeat;
@@ -77,6 +83,10 @@
     background-position: -57px 0px;
     position: relative;
     top:10px;
+}
+.settlement .left .select .active{
+    background-position: -34px 0px;
+
 }
 .settlement .left .total .price{
     color: #FFA3C0;

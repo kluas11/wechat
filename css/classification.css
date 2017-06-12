@@ -11,10 +11,7 @@
     display: inline-block;
     margin-top: 10px;
 }
-#species_list li{
-    margin-bottom: 10px;
-    height: 116px;
-}
+
 #species_list li a{
     height: 100%;
     display: block;
@@ -39,5 +36,6 @@ a:hover{
     text-decoration: none;
 }
 .footer_info{
-    margin-top: 0px;
+    /*padding-bottom: 70px;*/
+    margin-top:0;
 }

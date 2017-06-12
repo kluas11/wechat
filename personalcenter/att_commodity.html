@@ -49,3 +49,8 @@
 <!--链接bootstrap JS文件-->
 <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="../bower_components/less/dist/less.min.js"></script>
+<script>
+    $('.delect span').click(function () {
+        $(this).parentsUntil('.container-fluid').hide();
+    })
+</script>

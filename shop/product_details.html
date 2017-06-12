@@ -213,19 +213,19 @@ $('#specification .number .right .jian').click(function () {
     });
 //    购物车点击
 //取消滑动默认事件
-function tm(event) {
-    event.preventDefault();
+     var flag=0;
+function tm(ev) {
+    ev.preventDefault();
 }
 
     $(".shop_car").click(function () {
-        var flag=1;
+        flag=1;
         if (flag == 1){//遮罩层
 //            pc防止滑动
             document.body.style.overflow='hidden';
             document.body.style.height='100%';
 //            侦听手机滑动触发时间 防止手机滑动
-            document.addEventListener('touchmove', tm(event),false)
-
+            document.addEventListener('touchmove',tm)
         }
         $("#specification").fadeIn();
         $(".cover").fadeIn();
@@ -241,12 +241,13 @@ function tm(event) {
 //    关闭按钮
     $(".clo").click(function () {
 //            pc防止滑动
-            document.body.style.overflow='';
-            document.body.style.height='';
+        var flag=0;
+        if(flag==0) {
+            document.body.style.overflow = '';
+            document.body.style.height = '';
 //            移除侦听事件
-        document.removeEventListener('touchmove', tm(event),false)
-
-
+            document.removeEventListener('touchmove',tm)
+        }
         $("#specification").hide();
         $(".cover").hide();
     })

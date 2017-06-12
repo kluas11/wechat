@@ -13,20 +13,20 @@
     <link rel="stylesheet" href="css/commodity.css">
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid" id="top">
     <div class="row shop_list bgw">
         <div class="  col-xs-1 pr0 pl0 check">
-           <i></i>
+           <i class="a"></i>
         </div>
             <div class="col-xs-4">
                 <img src="images/deatil3.png" alt="" style="width: 70px">
             </div>
         <div class="col-xs-7 content pl0">
             <p class="p1">韩都衣舍秋冬装新款女装长袖</p>
-            <p class="price">￥200.00</p>
+            <p class="p2">￥<span class="price">200.00</span></p>
             <div class="number">
                 <span class="jia">+</span>
-                <span class="num">1</span>
+                <input class="num" value="0" readonly/>
                 <span class="jian">-</span>
             </div>
             <div class="delect">
@@ -37,17 +37,17 @@
     </div>
     <div class="row shop_list  list2 bgw">
         <div class="  col-xs-1 pr0 pl0 check">
-            <i></i>
+            <i class="b"></i>
         </div>
         <div class="col-xs-4">
             <img src="images/deatil3.png" alt="" style="width: 70px">
         </div>
         <div class="col-xs-7 content pl0">
             <p class="p1">韩都衣舍秋冬装新款女装长袖</p>
-            <p class="price">￥200.00</p>
+            <p class="p2">￥<span class="price">200.00</span></p>
             <div class="number">
                 <span class="jia">+</span>
-                <span class="num">1</span>
+                <input class="num" value="0" readonly/>
                 <span class="jian">-</span>
             </div>
             <div class="delect">
@@ -60,14 +60,14 @@
     <div class="row settlement bgw">
         <div class="col-xs-8 left pr0">
             <div class="select col-xs-4 pl0 pr0">
-                <i></i>&nbsp;
-                <span>全选</span>
+                <i class=""></i>&nbsp;
+                <span class="">全选</span>
             </div>
             <div class="total col-xs-8 pr0 ">
-                合计:<span class="price">￥200.00</span></div>
+                合计:￥<span id="he_price">0.00</span></div>
         </div>
         <div class="col-xs-4 right pr0 pl0">
-            <div class="content">结算（<span>1</span>）</div>
+            <div class="content">结算（<span id="balance">0</span>）</div>
         </div>
     </div>
     <!--底部-->
@@ -98,3 +98,67 @@
 <script src="js/jquery-1.11.3/jquery.min.js"></script>
 <!--链接bootstrap JS文件-->
 <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script>
+    window.onload=function () {
+// 图标点击与全选
+
+    $('.check i').click(function () {
+        $(this).toggleClass('active');
+        if ($(".check i[class*='active']").length==$('.check i').length){
+            $(".settlement .select i").addClass('active')
+        }else {
+//            console.log(2);
+            $(".settlement .select i").removeClass('active')
+        }
+
+    })
+    $(".settlement .select i").click(function () {
+        $(this).toggleClass('active');
+        if ($(this).attr('class') == 'active') {
+            $('.check i').addClass('active')
+        } else {
+            $('.check i').removeClass('active')
+        }
+    })
+//   加减
+
+        $(".jia").click(function(){
+            var t=$(this).parent().find('.num');
+            t.val(parseInt(t.val())+1)
+            setTotal();
+
+        })
+        $(".jian").click(function(){
+            var t=$(this).parent().find('.num');
+            t.val(parseInt(t.val())-1);
+            if(parseInt(t.val())<0){
+                t.val(0);
+            }
+            setTotal();
+        })
+
+        function setTotal(){
+            var s=0;
+            var nmr=0;
+            $(".shop_list").each(function(){
+                s+=parseInt($(this).find('input[class*=num]').val())*parseFloat($(this).find(' .p2 span[class*=price]').text());
+                nmr+=parseInt($(this).find('input[class*=num]').val());
+//                if ($('.number input[class=num]').val()!=0){
+//
+//                    $(this).prev().find('.check i').addClass('active');
+//                    console.log(1);
+//                }else {
+//
+//                    $(this).prev().find('.check i').removeClass('active');
+//
+//                }
+            });
+            $("#he_price").html(s.toFixed(2));
+            $('#balance').html(nmr);
+
+        }
+        setTotal();
+
+    }
+
+</script>

@@ -9,17 +9,19 @@ body {
   line-height: 40px;
 }
 .types .content .down {
-  text-align: center;
   width: 150px;
   background: #f2f2f2;
+  position: relative;
 }
 .types .content .down .down_arrow {
   line-height: 32px;
   width: 35px;
   background: #fff;
   display: inline-block;
-  position: relative;
-  right: -20px;
+  position: absolute;
+  right: 6px;
+  text-align: center;
+  top:4px;
 }
 .types .content .down .down_arrow i {
   background: url("../images/bottom_arrow.png") no-repeat;
@@ -69,4 +71,22 @@ body {
   background-color: #fff;
   display: inline-block;
   border-radius: 25px;
+}
+.down_content{
+  display: none;
+  background-color: #f2f2f2;
+  position: absolute;
+  top:46px;
+  width: 150px;
+  overflow: hidden;
+ left: 56px;
+  text-align: center;
+  z-index: 10;
+}
+.down .return{
+  display: inline-block;
+  text-indent: 2em;
+}
+.content .lei ,.down{
+  float:left;
 }
