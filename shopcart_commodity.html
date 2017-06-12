@@ -101,20 +101,31 @@
 <script>
     window.onload=function () {
 // 图标点击与全选
-
     $('.check i').click(function () {
         $(this).toggleClass('active');
+        if ($(this).hasClass('active')){
+          if ($(this).parent().siblings().children('.number').find('.num').val()==0){
+              var w=$(this).parent().siblings().children('.number').find('.num');
+              w.val(parseInt(w.val()+1));
+          }else{
+              $(this).removeClass('active');
+          }
+        }else {
+            var w=$(this).parent().siblings().children('.number').find('.num');
+            w.val(parseInt(w.val()-1));
+        }
+//        判断全选按钮
         if ($(".check i[class*='active']").length==$('.check i').length){
             $(".settlement .select i").addClass('active')
         }else {
 //            console.log(2);
             $(".settlement .select i").removeClass('active')
         }
-
+        setTotal();
     })
     $(".settlement .select i").click(function () {
         $(this).toggleClass('active');
-        if ($(this).attr('class') == 'active') {
+        if ($(this).attr('class')=='active') {
             $('.check i').addClass('active')
         } else {
             $('.check i').removeClass('active')
@@ -124,17 +135,26 @@
 
         $(".jia").click(function(){
             var t=$(this).parent().find('.num');
+//            点击自增1
             t.val(parseInt(t.val())+1)
+//            进行累加
             setTotal();
+//          点击加号被选中
+            $(this).parent().parent().siblings('.check ').children('i').addClass('active');
 
         })
         $(".jian").click(function(){
+//            点击自减
             var t=$(this).parent().find('.num');
             t.val(parseInt(t.val())-1);
+//            判断不能小于0 赋值为0
             if(parseInt(t.val())<0){
                 t.val(0);
             }
             setTotal();
+            if(t.val()==0){
+                $(this).parent().parent().siblings('.check ').children('i').removeClass('active');
+            }
         })
 
         function setTotal(){
