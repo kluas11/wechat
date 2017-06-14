@@ -103,6 +103,7 @@
 // 图标点击与全选
     $('.check i').click(function () {
         $(this).toggleClass('active');
+
         if ($(this).hasClass('active')){
           if ($(this).parent().siblings().children('.number').find('.num').val()==0){
               var w=$(this).parent().siblings().children('.number').find('.num');
@@ -110,27 +111,34 @@
           }else{
               $(this).removeClass('active');
           }
+
         }else {
             var w=$(this).parent().siblings().children('.number').find('.num');
-            w.val(parseInt(w.val()-1));
+            w.val(0);
         }
-//        判断全选按钮
+        setTotal();
+//        全选判断
         if ($(".check i[class*='active']").length==$('.check i').length){
             $(".settlement .select i").addClass('active')
         }else {
-//            console.log(2);
             $(".settlement .select i").removeClass('active')
         }
-        setTotal();
+
     })
-    $(".settlement .select i").click(function () {
-        $(this).toggleClass('active');
-        if ($(this).attr('class')=='active') {
-            $('.check i').addClass('active')
-        } else {
-            $('.check i').removeClass('active')
-        }
-    })
+//        全选还没设置自增一
+        $(".settlement .select i").click(function () {
+            $(this).toggleClass('active');
+            if ($(this).attr('class')=='active') {
+                $('.check i').addClass('active')
+                $('.number .num').val(1);
+
+            } else {
+                $('.check i').removeClass('active')
+                $('.number .num').val(0);
+            }
+            setTotal();
+        })
+
 //   加减
 
         $(".jia").click(function(){
@@ -141,6 +149,12 @@
             setTotal();
 //          点击加号被选中
             $(this).parent().parent().siblings('.check ').children('i').addClass('active');
+//                    判断全选按钮
+            if ($(".check i[class*='active']").length==$('.check i').length){
+                $(".settlement .select i").addClass('active')
+            }else {
+                $(".settlement .select i").removeClass('active')
+            }
 
         })
         $(".jian").click(function(){
@@ -155,6 +169,13 @@
             if(t.val()==0){
                 $(this).parent().parent().siblings('.check ').children('i').removeClass('active');
             }
+//            全选判断
+            if ($(".check i[class*='active']").length==$('.check i').length){
+                $(".settlement .select i").addClass('active')
+            }else {
+                $(".settlement .select i").removeClass('active')
+            }
+
         })
 
         function setTotal(){
@@ -163,15 +184,7 @@
             $(".shop_list").each(function(){
                 s+=parseInt($(this).find('input[class*=num]').val())*parseFloat($(this).find(' .p2 span[class*=price]').text());
                 nmr+=parseInt($(this).find('input[class*=num]').val());
-//                if ($('.number input[class=num]').val()!=0){
-//
-//                    $(this).prev().find('.check i').addClass('active');
-//                    console.log(1);
-//                }else {
-//
-//                    $(this).prev().find('.check i').removeClass('active');
-//
-//                }
+
             });
             $("#he_price").html(s.toFixed(2));
             $('#balance').html(nmr);
