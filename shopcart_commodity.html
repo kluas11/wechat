@@ -16,7 +16,7 @@
 <div class="container-fluid" id="top">
     <div class="row shop_list bgw">
         <div class="  col-xs-1 pr0 pl0 check">
-           <i class="a"></i>
+           <i class="a active"></i>
         </div>
             <div class="col-xs-4">
                 <img src="images/deatil3.png" alt="" style="width: 70px">
@@ -26,7 +26,7 @@
             <p class="p2">￥<span class="price">200.00</span></p>
             <div class="number">
                 <span class="jia">+</span>
-                <input class="num" value="0" readonly/>
+                <span class="num">1</span>
                 <span class="jian">-</span>
             </div>
             <div class="delect">
@@ -36,8 +36,8 @@
         </div>
     </div>
     <div class="row shop_list  list2 bgw">
-        <div class="  col-xs-1 pr0 pl0 check">
-            <i class="b"></i>
+        <div class="col-xs-1 pr0 pl0 check">
+            <i class="b active"></i>
         </div>
         <div class="col-xs-4">
             <img src="images/deatil3.png" alt="" style="width: 70px">
@@ -47,7 +47,7 @@
             <p class="p2">￥<span class="price">200.00</span></p>
             <div class="number">
                 <span class="jia">+</span>
-                <input class="num" value="0" readonly/>
+                <span class="num">1</span>
                 <span class="jian">-</span>
             </div>
             <div class="delect">
@@ -100,41 +100,25 @@
 <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script>
     window.onload=function () {
+        allPan()
+        setTotal();
 // 图标点击与全选
     $('.check i').click(function () {
         $(this).toggleClass('active');
-
-        if ($(this).hasClass('active')){
-          if ($(this).parent().siblings().children('.number').find('.num').val()==0){
-              var w=$(this).parent().siblings().children('.number').find('.num');
-              w.val(parseInt(w.val()+1));
-          }else{
-              $(this).removeClass('active');
-          }
-
-        }else {
-            var w=$(this).parent().siblings().children('.number').find('.num');
-            w.val(0);
-        }
         setTotal();
 //        全选判断
-        if ($(".check i[class*='active']").length==$('.check i').length){
-            $(".settlement .select i").addClass('active')
-        }else {
-            $(".settlement .select i").removeClass('active')
-        }
-
+        allPan()
     })
 //        全选还没设置自增一
         $(".settlement .select i").click(function () {
             $(this).toggleClass('active');
             if ($(this).attr('class')=='active') {
                 $('.check i').addClass('active')
-                $('.number .num').val(1);
+                $('.number .num').text(1);
 
             } else {
                 $('.check i').removeClass('active')
-                $('.number .num').val(0);
+                $('.number .num').text(0);
             }
             setTotal();
         })
@@ -142,55 +126,76 @@
 //   加减
 
         $(".jia").click(function(){
-            var t=$(this).parent().find('.num');
+            var t=$(this).parent().find('.num')
+            var num =t.html();
 //            点击自增1
-            t.val(parseInt(t.val())+1)
+           t.html(++num);
 //            进行累加
             setTotal();
 //          点击加号被选中
             $(this).parent().parent().siblings('.check ').children('i').addClass('active');
 //                    判断全选按钮
-            if ($(".check i[class*='active']").length==$('.check i').length){
-                $(".settlement .select i").addClass('active')
-            }else {
-                $(".settlement .select i").removeClass('active')
-            }
-
+            allPan()
         })
+
         $(".jian").click(function(){
 //            点击自减
             var t=$(this).parent().find('.num');
-            t.val(parseInt(t.val())-1);
-//            判断不能小于0 赋值为0
-            if(parseInt(t.val())<0){
-                t.val(0);
+            var num =t.html();
+//            自减
+            t.html(--num);
+//            console.log(t)
+//            判断不能小于1 赋值为1
+            if(parseInt(t.text())<1){
+                t.text(1);
             }
             setTotal();
-            if(t.val()==0){
+            if(t.html()==0){
                 $(this).parent().parent().siblings('.check ').children('i').removeClass('active');
             }
 //            全选判断
+            allPan()
+
+        })
+//        点击删除
+        $('.delect').click(function () {
+//            del();
+            $(this).parent().parent().remove();
+            setTotal()
+
+        })
+
+//全选判断
+        function allPan() {
             if ($(".check i[class*='active']").length==$('.check i').length){
                 $(".settlement .select i").addClass('active')
             }else {
                 $(".settlement .select i").removeClass('active')
             }
-
-        })
-
+        }
+        统计
         function setTotal(){
             var s=0;
             var nmr=0;
             $(".shop_list").each(function(){
-                s+=parseInt($(this).find('input[class*=num]').val())*parseFloat($(this).find(' .p2 span[class*=price]').text());
-                nmr+=parseInt($(this).find('input[class*=num]').val());
+                if($(this).find('.check i').hasClass('active')==true) {
+                    var number = parseInt($(this).find('span[class=num]').text());
+                    var pricee = parseFloat($(this).find(' .p2 span[class=price]').text());
 
+                    s += number * pricee;
+                    nmr += parseInt($(this).find('span[class*=num]').text());
+                }
             });
+
             $("#he_price").html(s.toFixed(2));
             $('#balance').html(nmr);
 
+           if($('#top').children('.shop_list').length==0){
+               $(".settlement .select i").removeClass('active')
+           }else {
+               return;
+           }
         }
-        setTotal();
 
     }
 
